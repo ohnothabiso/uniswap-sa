@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#95d4b3","tertiary-fixed-dim":"#ffb4a1","on-tertiary-container":"#ffcfc3","on-primary-fixed-variant":"#0e5138","secondary-fixed-dim":"#75daa8","secondary":"#006c48","surface-tint":"#2c694e","on-primary":"#ffffff","on-tertiary-fixed-variant":"#7c2e19","surface-variant":"#e0e3e0","background":"#f7faf6","on-tertiary":"#ffffff","inverse-on-surface":"#eef1ee","surface-bright":"#f7faf6","error":"#ba1a1a","error-container":"#ffdad6","outline":"#707973","on-secondary":"#ffffff","surface-container-highest":"#e0e3e0","on-primary-fixed":"#002114","on-secondary-fixed":"#002113","secondary-fixed":"#92f7c3","on-secondary-container":"#00734d","on-secondary-fixed-variant":"#005235","on-background":"#181c1a","surface-dim":"#d8dbd7","on-tertiary-fixed":"#3c0800","on-error":"#ffffff","surface-container-low":"#f1f4f1","on-error-container":"#93000a","primary-container":"#2d6a4f","on-surface-variant":"#404943","surface-container":"#ecefeb","surface-container-high":"#e6e9e5","tertiary-container":"#9b452e","primary":"#0f5238","inverse-surface":"#2d312f","tertiary":"#7c2e19","primary-fixed-dim":"#95d4b3","primary-fixed":"#b1f0ce","surface":"#f7faf6","tertiary-fixed":"#ffdbd2","on-primary-container":"#a8e7c5","outline-variant":"#bfc9c1","on-surface":"#181c1a","secondary-container":"#92f7c3","surface-container-lowest":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-md":"1rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xl":"2rem","space-xs":"0.25rem","gutter":"1rem","margin":"2rem"},"fontFamily":{"label-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-sm":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1 px-margin-mobile md:px-margin"><div class="max-w-[1280px] mx-auto flex items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px]">verified_user</span><span>SPU Safe Exchange Guarantee: Meet at approved campus zones (Central Library, Luka Jantjie Hall, Moroka Res)</span></div><div class="hidden md:flex items-center gap-space-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span>Campus Safety Network Active</span></div></div></div><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><img alt="UniSwap Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XmLxTo-RNPncWJ_42tlY4g18ePzKlplwqU_s-PrktI_Ti_aXUcFbPIbyIcvM78pHkEHkb_vTuYnhOnZiCofdH0JCxaD4DVrBybhDRi5eNGwb-YjQgpN4gm9bFL_5AFND0_0Ja2qjMBpYdwynnzswNDyFI6xJPSNqX1ktj8d9KtMGE9yTK951iFKRjhFeCFGGNTbMiayKJizqkLbpuRW6gHA35R2Oagp9kf_4QnZDTXNdrwtJ6wB9U5SArQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">UniSwap</span><div class="flex items-center gap-1 mt-0.5"><span class="material-symbols-outlined text-[13px] text-secondary">shield</span><span class="font-label-sm text-label-sm text-on-surface-variant">SPU Verified Network</span></div></div></div><div class="hidden xl:flex items-center flex-1 max-w-xs mx-space-sm"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline text-label-md font-label-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search campus thrift, textbooks, dorm essentials..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a aria-current="page" class="px-3 py-2 transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="explore-marketplace" href="#">Explore Marketplace</a><a class="px-3 py-2 text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="direct-swaps" href="#">Direct Swaps</a><a class="px-3 py-2 text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="free-donations" href="#">Free Donations</a><a class="px-3 py-2 text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="campus-safe-zones" href="#">Campus Safe Zones</a><a class="px-3 py-2 text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="my-dashboard" href="#">My Dashboard</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><button class="hidden sm:flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary px-3.5 py-2 rounded-lg font-label-md text-label-md transition-all shadow-[0_4px_12px_rgba(15,82,56,0.15)]" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>List an Item</span></button><button aria-label="Swap proposals and notifications" class="p-2 text-on-surface-variant hover:text-on-surface relative rounded-full hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-container"></span></button><div class="flex items-center gap-2 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnk9dK_TVCkvhL94cuYDIQPpxHKVxCakmwTKW1hdFL1SNlgbvshjh97H1iNbRdmKcQonB-iTPN6t8exSyZt9DwkkPPT8YzE2vRone3g3XjXWGZ0eVKmunGoiJlcWH6_LLL9l9MlQTg54Zcsmn8BYeVTNhKHvv94puDGJ_0xu2yUVzM1TRlEBsq0a-crx20pss2XR-oaB6WmvmJk6k_dlhTGU4C6hGYTrSfdelN8c0JhL8lV-Wr7hlhFA"/><div class="hidden md:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Katlego M.</span><span class="font-label-sm text-[10px] text-secondary font-semibold leading-tight">katlego.m@spu.ac.za</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full bg-surface-container-low px-margin-mobile md:px-margin py-space-xl overflow-hidden">
+<!-- Diffused ambient organic green glows -->
+<div class="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-secondary-fixed/25 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-16 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex-1 space-y-space-md text-left">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">cycle</span>
+<span>Sol Plaatje University Circular Wardrobe Collective</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight max-w-2xl">
+          Sustainable Style for SPU. <span class="text-secondary italic">Swap, don't shop.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Keep campus fashion circular. Trade pre-loved threads, grab verified free items, and complete seamless peer-to-peer exchanges in certified campus safe zones.
+        </p>
+<!-- Quick Filter Preset Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition shadow-sm flex items-center gap-1.5" onclick="setQuickTag('Free')" type="button">
+<span class="material-symbols-outlined text-secondary text-[16px]">volunteer_activism</span>
+<span>Browse Free Donations</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition shadow-sm flex items-center gap-1.5" onclick="setQuickTag('Graduation')" type="button">
+<span class="material-symbols-outlined text-primary text-[16px]">school</span>
+<span>Graduation Attire Swaps</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition shadow-sm flex items-center gap-1.5" onclick="setQuickTag('Knitwear')" type="button">
+<span class="material-symbols-outlined text-tertiary text-[16px]">ac_unit</span>
+<span>Winter Knits</span>
+</button>
+</div>
+</div>
+<!-- Live Campus Real-Time Metric Mosaic -->
+<div class="w-full lg:w-auto flex flex-col sm:flex-row lg:flex-col gap-space-sm flex-shrink-0">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md min-w-[280px]">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">compost</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary leading-tight">1,420 kg</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Textile Waste Diverted at SPU</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md min-w-[280px]">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">swap_horiz</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary leading-tight">840+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Completed Peer Swaps</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md min-w-[280px]">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed/60 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">savings</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-tertiary leading-tight">R 42,000</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Saved by Student Community</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Safe Exchange Alert Bar -->
+<section class="w-full bg-primary-container text-on-primary py-2.5 px-margin-mobile md:px-margin">
+<div class="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-label-sm font-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">gshield</span>
+<span>Always meet inside monitored zones: Central Library Ground Floor, Luka Jantjie Security Wing, or Moroka Residence Desk.</span>
+</div>
+<a class="text-secondary-fixed underline hover:text-white transition flex items-center gap-1" href="#" onclick="openSafetyModal(event)">
+<span>View SPU Exchange Protocols</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Sticky Filter Bar & Interactive Controls -->
+<div class="sticky top-20 z-40 w-full bg-surface/95 backdrop-blur-md shadow-sm py-space-sm px-margin-mobile md:px-margin">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-sm">
+<!-- Upper Filter Tier: Categories & Mode Switches -->
+<div class="flex items-center justify-between gap-space-md overflow-x-auto pb-1 scrollbar-none">
+<!-- Categories horizontal scroller -->
+<div class="flex items-center gap-space-xs flex-nowrap" id="categoryGroup">
+<button class="category-btn px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md transition flex-shrink-0 shadow-sm" data-category="all" onclick="filterCategory('all')" type="button">
+            All Items
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0" data-category="hoodies" onclick="filterCategory('hoodies')" type="button">
+            Hoodies & Sweaters
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0" data-category="jackets" onclick="filterCategory('jackets')" type="button">
+            Vintage Jackets
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0" data-category="tees" onclick="filterCategory('tees')" type="button">
+            Campus Tees
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0" data-category="denim" onclick="filterCategory('denim')" type="button">
+            Denim & Trousers
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0" data-category="formal" onclick="filterCategory('formal')" type="button">
+            Formal & Graduation
+          </button>
+<button class="category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0" data-category="footwear" onclick="filterCategory('footwear')" type="button">
+            Sneakers & Boots
+          </button>
+</div>
+<!-- Result count tag -->
+<div class="hidden md:flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary" id="itemsCounter">8</span>
+<span>Verified Listings</span>
+</div>
+</div>
+<!-- Lower Filter Tier: Transaction Types & Sizing Badges -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<!-- Transaction Type Pills -->
+<div class="flex items-center gap-space-xs flex-wrap" id="typeGroup">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Deal Type:</span>
+<button class="type-btn px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm transition" data-type="all" onclick="filterType('all')" type="button">
+            All Deals
+          </button>
+<button class="type-btn px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition flex items-center gap-1" data-type="swap" onclick="filterType('swap')" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Direct Swap
+          </button>
+<button class="type-btn px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition flex items-center gap-1" data-type="sale" onclick="filterType('sale')" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+            Cash Sale
+          </button>
+<button class="type-btn px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-tertiary-fixed hover:text-tertiary transition flex items-center gap-1" data-type="free" onclick="filterType('free')" type="button">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+            100% Free
+          </button>
+</div>
+<!-- Size Filter Chips -->
+<div class="flex items-center gap-1 overflow-x-auto" id="sizeGroup">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Size:</span>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm transition" data-size="all" onclick="filterSize('all')" type="button">All</button>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" data-size="XS" onclick="filterSize('XS')" type="button">XS</button>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" data-size="S" onclick="filterSize('S')" type="button">S</button>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" data-size="M" onclick="filterSize('M')" type="button">M</button>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" data-size="L" onclick="filterSize('L')" type="button">L</button>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" data-size="XL" onclick="filterSize('XL')" type="button">XL</button>
+<button class="size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" data-size="UK 6" onclick="filterSize('UK 6')" type="button">UK 6</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Marketplace Listing Grid -->
+<main class="w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-space-lg">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md" id="listingGrid">
+<!-- Card 1 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="jackets" data-size="L" data-type="swap">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vintage deep forest green corduroy buttoned overshirt styled on a neutral wooden hanger against a clean textured stone backdrop with natural morning window lighting, organic cotton texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKcX7m9Vt-vpTtpCpCDm3R1TQFxnMpp5HRBCWtTNjQzODW-mfZkDxuptxYErASeVdg8T90Q7ayFA_FyIfw4n1LYvYDjU3O-vX5yEhLWJmrI2KC-wS7jujNRldQsjcR7RZJJTxKLG9TtVEfOZc9lnX1d4q55fq8anP1UJl2tQxtje9kTPILjY-D0nQtcKNK3UdXpSjYpsajfrWrnaez9aHuar7WEnnFZ0duAqThau_UgTiSdKusOmS4bQ"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">swap_calls</span>
+              Direct Swap
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Central Library
+            </span>
+<span class="text-on-surface-variant font-medium">Size L • Gently Worn</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nandi K. • Moroka Res</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Vintage Green Corduroy Overshirt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Looking to trade for a heavy boxy cropped tee or utility canvas tote bag.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition flex items-center justify-center gap-1.5 shadow-sm" onclick="openSwapModal('Vintage Green Corduroy Overshirt', 'Nandi K.', 'Central Library Ground Floor', 'swap')" type="button">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>Propose Swap</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="hoodies" data-size="M" data-type="sale">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Official dark forest green Sol Plaatje University collegiate heavy fleece hoodie laid flat on warm linen fabric with embroidered gold lettering, pristine condition, soft campus lifestyle photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGTlBj50856PT0BD74Fwokv4sWZt_WLPR1r5cjS3eud_idcHJ3YQQLlcC__iiSrq0Fqg2RbfJ5tgdDSe9StGN3NZY_ALf3DpV9lyBEtfGrm4FdVBVweP0XU5QHQFVuxuKo9Gf-j34F1tFI0ly8CUM2117lefewHWHeYg81gcB0FYoiBRvQqaaEatmmGuD0f_fZpUtD-yZ4NHUSWQOHdB9T-GAX2ecSeMDi0QzyvF23zUATZP6gUbW7rw"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-sm">
+              Cash Sale • R 180
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Luka Jantjie Hall
+            </span>
+<span class="text-on-surface-variant font-medium">Size M • Like New</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sipho D. • 3rd Year Edu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">SPU Official Varsity Fleece Hoodie</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Authentic student store item. Bought last semester, barely worn. Clean fleece lining.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition flex items-center justify-center gap-1.5" onclick="openSwapModal('SPU Official Varsity Fleece Hoodie', 'Sipho D.', 'Luka Jantjie Security Zone', 'buy')" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Reserve (R180)</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="hoodies" data-size="S" data-type="free">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Chunky oversized cream cableknit sweater folded casually on an unvarnished oak student desk with warm late afternoon sunlight, warm cozy wool fabric, editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBXx2m6pgMkYVTXZRfjdjikKFIWWDCkghEz51RSwhav2-8iaAx3AEfu42uh1-JbA2ELHXtleQYqpT5cmXD7tOJ-iFNCIFrU33o0AxUlnks_kM4pE0HRZs17lUBpM9NoMLO_gONKXSiCGbNAy7gPSq-y3tzUj-x1UStT5hlvn7yCUPkrqjuBVTKiI8X_dy5xzOObQ_C_M43kRsQv0Rmer0TX-VHRA2Lg7tbggdniPURf-PmI4dHBfc-CQ"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+              100% Free Donation
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Moroka Res Desk
+            </span>
+<span class="text-on-surface-variant font-medium">Size S/M • Well Loved</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lerato B. • Graduating</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Oversized Cableknit Cream Jumper</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Passing forward before vac! Super warm for winter Kimberley mornings. Free to any student.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-tertiary-fixed hover:bg-tertiary text-on-tertiary-fixed hover:text-on-tertiary font-label-md text-label-md transition flex items-center justify-center gap-1.5" onclick="openSwapModal('Oversized Cableknit Cream Jumper', 'Lerato B.', 'Moroka Res Ground Desk', 'claim')" type="button">
+<span class="material-symbols-outlined text-[16px]">redeem</span>
+<span>Claim Free Item</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="jackets" data-size="XL" data-type="swap">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic vintage washed denim trucker jacket with brass hardware hanging against a minimalist beige studio wall, crisp seams, authentic 90s aesthetic in rich earthy lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb3YXyP0J7wvG1O63evMR0fLm_k4EAkFY_cAuMR0_gulRJIwLBjRdjPtdhSvGV3633a0V8rnD0_J_rd6CWsHKhDeMK9UFMb6787pTHcTmQ4c-epCWVv6WVvM8lXLGfuZkdsY3PP0elgcB_xdmXOlh_qgBXK2X178hWSap0ohitqK5kHm_jtuD2g3dxYknblsXW6JliDED1QMatwIE6pPOVbAmogWFUHciuZI2JuncaALeqCRDU7uZrzg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">swap_calls</span>
+              Direct Swap
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Luka Jantjie Wing B
+            </span>
+<span class="text-on-surface-variant font-medium">Size XL • Great Cond.</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thabo M. • SPU ICT Dept</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Classic Washed Denim Trucker Jacket</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Seeking swap for olive green cargo pants or leather Chelsea boots size 9.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition flex items-center justify-center gap-1.5 shadow-sm" onclick="openSwapModal('Classic Washed Denim Trucker Jacket', 'Thabo M.', 'Luka Jantjie Wing B', 'swap')" type="button">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>Propose Swap</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="formal" data-size="L" data-type="swap">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Official university academic graduation black gown with satin trim and mortarboard cap neatly arranged for a graduation ceremony portrait, clean crisp drapery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAndQ9viGL4P1Y32_TQys_L3oDiB6FEpYQv4fdYXaU0FPW6ayicgRFftcXY39bDvy9KNBH2UeBHkNTVTmr-eEXDbdKSHa1FLrR2dhN10umzha3-wdCvNRhsg1ftq20yyI21RqV0PlmcLd2cZ9_TAHLMx69WTCiGrYMZedhDZoUf3yIKXaOtXYWYAb-ragsau9G7u7KnClH_4SlX7BcaOIMD-EWSWMpJyYETctYswY78JeFTqXxkskTXUA"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">school</span>
+              Graduation Special
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Central Library Foyer
+            </span>
+<span class="text-on-surface-variant font-medium">Std 54 • Like New</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zola N. • SPU Alum 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Academic Gown & Mortarboard Set</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Available for day-hire (R90) or exchange for formal interview blazer.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition flex items-center justify-center gap-1.5 shadow-sm" onclick="openSwapModal('Academic Gown & Mortarboard Set', 'Zola N.', 'Central Library Foyer', 'swap')" type="button">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>Reserve Gown</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="footwear" data-size="UK 6" data-type="sale">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Chunky white clean platform canvas sneakers positioned symmetrically on a pale sage green floor, subtle campus fashion aesthetic, minimal soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdxGxcdnr1mqruKzZ0nD3lvx0p1qAU6FZvdc9c80L8xXgJ0X3AbRVpQ-m-npyXXiXbW8_Z4EXScHf8VgtGPW7DjHAjJuA0Jf1uFZozvVX7TD8n1JgxiVT8oh3c9ez7Ire2501axNE1CMYJYSynr76-CQAmW9qId2UFcWwxf6ZSMzzo00Q5FTIOLCrXz1M-RU4K2h6fktAwYzEyJuwjm60a2loJ_AoU_KnAIY4LN4StrRvuTLxzXB5How"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-sm">
+              Cash Sale • R 220
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Moroka Dining Hall
+            </span>
+<span class="text-on-surface-variant font-medium">UK 6 • Gently Worn</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kagiso P. • Humanities</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Chunky White Platform Sneakers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Worn twice for orientation week. Deep cleaned soles. Very comfortable for long lecture walks.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition flex items-center justify-center gap-1.5" onclick="openSwapModal('Chunky White Platform Sneakers', 'Kagiso P.', 'Moroka Dining Hall Zone', 'buy')" type="button">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Reserve (R220)</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 7 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="formal" data-size="S" data-type="free">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Lightweight floral patterned summer dress with botanical green prints on pale cream fabric, captured on a hanger near lush campus foliage, clean soft sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJDboLIBUIJ-yWQwG35G8veNlM3Wir6PszFP86_l3QFtmWcfh14yvCbliEgYYGY-PYHHJSAXq80IsMHtEQ1MrItknu-tc2GWZuxI9TbQaZ1IdI3Bo2TqPK1YnsY0otdTojbAUQPXpW9-k7z9pt6SIYdovdXAUU1qPgOr9F8Z6ktdDtIYGVtXIdblPnMzoQyXYfq2c0RsZ2OdnZKkKQ_6mhAjJ9-M23144Tvzjji2ly3Benc90Hr8evWA"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+              100% Free Donation
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Central Library
+            </span>
+<span class="text-on-surface-variant font-medium">Size S • Like New</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ayesha M. • Science Fac</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Thrifted Botanical Sundress</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Gorgeous light dress. Giving away freely because I'm downsizing my dorm closet.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-tertiary-fixed hover:bg-tertiary text-on-tertiary-fixed hover:text-on-tertiary font-label-md text-label-md transition flex items-center justify-center gap-1.5" onclick="openSwapModal('Thrifted Botanical Sundress', 'Ayesha M.', 'Central Library Safe Exchange Area', 'claim')" type="button">
+<span class="material-symbols-outlined text-[16px]">redeem</span>
+<span>Claim Free Item</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 8 -->
+<article class="listing-item group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="jackets" data-size="L" data-type="swap">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Retro 1990s colorblock nylon windbreaker in forest green, navy, and off-white tones laid neatly on an editorial textured concrete surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE1UT5gdTrmnpb8aRpdfeHZ6GwpvNz6Ws3C9bAu5nmiiV01D5rl_0uM-pb1YTx8Om3Al61GN30yyh5oUpnthBvm8VMKn6Dix3ZT4wE7r2qkBl8oqn7nfp7G_teKU2t3bd6Kdb1cj6-Qtusff4Maw2rlptdQj9Ts0KHbT-v3HyCCyUV_mPVnCJo1CE8xGWpUGdVHCjc6qrN_WHPYSMDegYH2sFHhCWUnSnaoxfrSEYW0dVzb1hVIEQbAA"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">swap_calls</span>
+              Direct Swap
+            </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Save item to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-error flex items-center justify-center transition shadow-sm" onclick="toggleWishlist(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-label-sm font-label-sm text-on-surface bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1.5 rounded-lg shadow-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Luka Jantjie Hall
+            </span>
+<span class="text-on-surface-variant font-medium">Size L • Vintage Grade A</span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bokang R. • Commerce</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1">Retro 90s Colorblock Windbreaker</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Rare vintage find. Looking to trade for retro knitwear or collegiate track pants.</p>
+</div>
+<div class="pt-space-xs flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition flex items-center justify-center gap-1.5 shadow-sm" onclick="openSwapModal('Retro 90s Colorblock Windbreaker', 'Bokang R.', 'Luka Jantjie Quad', 'swap')" type="button">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+<span>Propose Swap</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State Container (Hidden by default) -->
+<div class="hidden py-space-xl flex-col items-center justify-center text-center space-y-space-sm bg-surface-container-lowest rounded-2xl p-space-xl my-space-md" id="emptyState">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[32px]">filter_alt_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">No matching campus listings</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Try clearing or broadening your category or size filters to find available pre-loved items.</p>
+<button class="mt-space-sm px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition" onclick="resetAllFilters()" type="button">
+        Reset All Filters
+      </button>
+</div>
+</main>
+<!-- Campus Safe Exchange Zone Interactive Information Section -->
+<section class="w-full bg-surface-container py-space-xl px-margin-mobile md:px-margin mt-space-lg">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span>100% Student Verified Only</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Sol Plaatje Safe Handover Protocol</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Every UniSwap member is verified using their official SPU student or staff email. Swaps and cash handovers happen inside designated campus perimeter zones with security visibility.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">local_library</span>
+<h4 class="font-headline-sm text-headline-sm">Zone A: Central Library</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Meet at the Ground Floor Atrium next to the IT help desk. CCTV coverage 24/7 with campus security stationed at turnstiles.
+        </p>
+<span class="inline-block mt-2 font-label-sm text-label-sm text-secondary bg-secondary-fixed/30 px-2 py-0.5 rounded">Mon-Fri 08:00 - 20:00</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">apartment</span>
+<h4 class="font-headline-sm text-headline-sm">Zone B: Luka Jantjie Wing</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Located beside the security checkpoint at North Campus quad. Well-lit open communal seating for inspecting garments and gear.
+        </p>
+<span class="inline-block mt-2 font-label-sm text-label-sm text-secondary bg-secondary-fixed/30 px-2 py-0.5 rounded">All Week 07:00 - 21:00</span>
+</div>
+</div>
+</section>
+<!-- Interactive Slide-Over / Modal: Propose Swap & Claim Dialog -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm" id="swapModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Close Button -->
+<button class="absolute top-4 right-4 p-1.5 rounded-full text-on-surface-variant hover:bg-surface-container transition" onclick="closeSwapModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">swap_horiz</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" id="modalModeTag">Propose Item Trade</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalItemTitle">Vintage Green Corduroy Overshirt</h3>
+</div>
+</div>
+<form class="space-y-space-md" id="swapProposalForm" onsubmit="submitProposal(event)">
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Listing Owner:</span>
+<span class="font-bold text-on-surface" id="modalSellerName">Nandi K.</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Designated SPU Zone:</span>
+<span class="text-secondary font-semibold" id="modalZoneName">Central Library Ground Floor</span>
+</div>
+</div>
+<div class="space-y-1" id="swapOfferingField">
+<label class="font-label-md text-label-md text-on-surface">Select your item to offer in exchange:</label>
+<select class="w-full p-2.5 bg-surface-container-lowest text-on-surface rounded-lg font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="item1">My Cropped Khaki Utility Jacket (Size M - Like New)</option>
+<option value="item2">Puma Suede Low Sneakers (UK 7 - Gently Worn)</option>
+<option value="item3">Heavyweight Ribbed Beanie + Tote Bag Bundle</option>
+<option value="custom">+ List a new item from my dorm closet...</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-on-surface">Friendly note to student:</label>
+<textarea class="w-full p-2.5 bg-surface-container-lowest text-on-surface placeholder:text-outline rounded-lg font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Hey! I can meet this afternoon between my 14:00 and 16:00 lectures at Central Library..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant bg-surface-container-lowest p-2 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Both parties must show student card upon zone handover.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-md text-label-md transition" onclick="closeSwapModal()" type="button">
+            Cancel
+          </button>
+<button class="px-5 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition shadow-md flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Student Proposal</span>
+</button>
+</div>
+</form>
+<!-- Confirmation view within modal (initially hidden) -->
+<div class="hidden py-6 text-center space-y-3" id="modalSuccess">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-primary mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">done_all</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Proposal Sent via SPU Net!</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The student has received an SMS & student portal notification. They will confirm the meetup time slot.</p>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md" onclick="closeSwapModal()" type="button">
+          Back to Marketplace
+        </button>
+</div>
+</div>
+</div>
+<!-- Safety Protocols Info Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm" id="safetyModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-xl relative">
+<button class="absolute top-4 right-4 p-1.5 rounded-full text-on-surface-variant hover:bg-surface-container transition" onclick="closeSafetyModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-3 mb-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">shield_with_heart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">SPU Safe Handover Code</h3>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant py-2">
+<div class="flex gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">pin_drop</span>
+<div>
+<strong class="text-on-surface block font-label-md">Always meet inside approved zones:</strong>
+            Never agree to meet off-campus or outside unlit residence perimeters.
+          </div>
+</div>
+<div class="flex gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">badge</span>
+<div>
+<strong class="text-on-surface block font-label-md">Verify SPU Identity:</strong>
+            Only trade with fellow students displaying active SPU student credentials in their profile.
+          </div>
+</div>
+<div class="flex gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">payments</span>
+<div>
+<strong class="text-on-surface block font-label-md">Fair Pricing & Donating:</strong>
+            UniSwap was built on student solidarity. Free listings must remain 100% free with no hidden requests.
+          </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex justify-end">
+<button class="px-5 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md" onclick="closeSafetyModal()" type="button">
+          Got it, I Understand
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Filter & State Management Scripts -->
+<script>
+    const filterState = {
+      category: 'all',
+      type: 'all',
+      size: 'all',
+      query: ''
+    };
+
+    function updateListings() {
+      const items = document.querySelectorAll('.listing-item');
+      let visibleCount = 0;
+
+      items.forEach(card => {
+        const itemCategory = card.getAttribute('data-category');
+        const itemType = card.getAttribute('data-type');
+        const itemSize = card.getAttribute('data-size');
+
+        const matchCategory = (filterState.category === 'all' || itemCategory === filterState.category);
+        const matchType = (filterState.type === 'all' || itemType === filterState.type);
+        const matchSize = (filterState.size === 'all' || itemSize === filterState.size);
+
+        if (matchCategory && matchType && matchSize) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      const counter = document.getElementById('itemsCounter');
+      if (counter) counter.textContent = visibleCount;
+
+      const empty = document.getElementById('emptyState');
+      if (empty) {
+        if (visibleCount === 0) {
+          empty.classList.remove('hidden');
+          empty.classList.add('flex');
+        } else {
+          empty.classList.add('hidden');
+          empty.classList.remove('flex');
+        }
+      }
+    }
+
+    function filterCategory(cat) {
+      filterState.category = cat;
+      document.querySelectorAll('#categoryGroup .category-btn').forEach(btn => {
+        if (btn.getAttribute('data-category') === cat) {
+          btn.className = 'category-btn px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md transition flex-shrink-0 shadow-sm';
+        } else {
+          btn.className = 'category-btn px-4 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition flex-shrink-0';
+        }
+      });
+      updateListings();
+    }
+
+    function filterType(type) {
+      filterState.type = type;
+      document.querySelectorAll('#typeGroup .type-btn').forEach(btn => {
+        if (btn.getAttribute('data-type') === type) {
+          btn.className = 'type-btn px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm transition';
+        } else {
+          btn.className = 'type-btn px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition';
+        }
+      });
+      updateListings();
+    }
+
+    function filterSize(size) {
+      filterState.size = size;
+      document.querySelectorAll('#sizeGroup .size-btn').forEach(btn => {
+        if (btn.getAttribute('data-size') === size) {
+          btn.className = 'size-btn px-2.5 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm transition';
+        } else {
+          btn.className = 'size-btn px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition';
+        }
+      });
+      updateListings();
+    }
+
+    function setQuickTag(tag) {
+      if (tag === 'Free') {
+        filterType('free');
+      } else if (tag === 'Graduation') {
+        filterCategory('formal');
+      } else if (tag === 'Knitwear') {
+        filterCategory('hoodies');
+      }
+    }
+
+    function resetAllFilters() {
+      filterCategory('all');
+      filterType('all');
+      filterSize('all');
+    }
+
+    function toggleWishlist(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        if (icon.getAttribute('style')?.includes("'FILL' 1")) {
+          icon.removeAttribute('style');
+          btn.classList.remove('text-error');
+        } else {
+          icon.setAttribute('style', "font-variation-settings: 'FILL' 1;");
+          btn.classList.add('text-error');
+        }
+      }
+    }
+
+    function openSwapModal(title, seller, zone, mode) {
+      const modal = document.getElementById('swapModal');
+      const titleElem = document.getElementById('modalItemTitle');
+      const sellerElem = document.getElementById('modalSellerName');
+      const zoneElem = document.getElementById('modalZoneName');
+      const modeTag = document.getElementById('modalModeTag');
+      const swapField = document.getElementById('swapOfferingField');
+      const form = document.getElementById('swapProposalForm');
+      const success = document.getElementById('modalSuccess');
+
+      if (titleElem) titleElem.textContent = title;
+      if (sellerElem) sellerElem.textContent = seller;
+      if (zoneElem) zoneElem.textContent = zone;
+      
+      if (form) form.classList.remove('hidden');
+      if (success) success.classList.add('hidden');
+
+      if (mode === 'claim') {
+        if (modeTag) modeTag.textContent = 'Claim Campus Donation';
+        if (swapField) swapField.classList.add('hidden');
+      } else if (mode === 'buy') {
+        if (modeTag) modeTag.textContent = 'Reserve Cash Purchase';
+        if (swapField) swapField.classList.add('hidden');
+      } else {
+        if (modeTag) modeTag.textContent = 'Propose Item Trade';
+        if (swapField) swapField.classList.remove('hidden');
+      }
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeSwapModal() {
+      const modal = document.getElementById('swapModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function submitProposal(e) {
+      e.preventDefault();
+      const form = document.getElementById('swapProposalForm');
+      const success = document.getElementById('modalSuccess');
+      if (form) form.classList.add('hidden');
+      if (success) success.classList.remove('hidden');
+    }
+
+    function openSafetyModal(e) {
+      e.preventDefault();
+      const modal = document.getElementById('safetyModal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeSafetyModal() {
+      const modal = document.getElementById('safetyModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="space-y-space-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[22px]">eco</span><span class="font-headline-sm text-headline-sm text-primary">UniSwap SPU</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">The student circular fashion and pre-loved essentials collective at Sol Plaatje University, Kimberley.</p><div class="pt-2 flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-sm text-label-sm text-on-surface">SPU Sustainability Council Endorsed</span></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-space-xs">Marketplace Safety</h4><ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant"><li>Central Library Meetup Point</li><li>Luka Jantjie Hall Security Zone</li><li>Moroka Residence Desk</li><li>Identity Verified Student Guidelines</li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-space-xs">Student Impact</h4><div class="space-y-2"><div class="bg-surface-container p-space-sm rounded-lg"><p class="font-headline-sm text-headline-sm text-primary leading-tight">3,420 kg</p><p class="font-label-sm text-label-sm text-on-surface-variant">Textile waste diverted from landfill</p></div><div class="bg-surface-container p-space-sm rounded-lg"><p class="font-headline-sm text-headline-sm text-secondary leading-tight">R 184,000</p><p class="font-label-sm text-label-sm text-on-surface-variant">Student funds retained via swaps</p></div></div></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-space-xs">Quick Navigation</h4><ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Textbook & Calculator Swaps</a></li><li><a class="hover:text-primary transition-colors" href="#">Graduation Attire Rental</a></li><li><a class="hover:text-primary transition-colors" href="#">Residence Moving-Out Hub</a></li><li><a class="hover:text-primary transition-colors" href="#">Lost & Found Exchange</a></li></ul></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-space-xs"><p>© 2025 UniSwap. Exclusively serving Sol Plaatje University students & staff.</p><div class="flex gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Campus Safe Exchange Policy</a><a class="hover:text-on-surface transition-colors" href="#">Student Honor Code</a><a class="hover:text-on-surface transition-colors" href="#">Support</a></div></div></div></footer></body></html>

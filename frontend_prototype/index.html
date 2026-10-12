@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e9edff","surface-container-highest":"#dce2f7","tertiary":"#003623","secondary-fixed-dim":"#7bd8b1","outline":"#707974","on-tertiary-fixed-variant":"#005236","on-tertiary":"#ffffff","tertiary-container":"#004f34","on-secondary":"#ffffff","on-secondary-fixed-variant":"#00513a","on-error-container":"#93000a","surface-container-low":"#f1f3ff","surface-variant":"#dce2f7","inverse-surface":"#293040","surface-container-lowest":"#ffffff","on-secondary-fixed":"#002115","on-tertiary-fixed":"#002113","background":"#f9f9ff","on-primary-fixed":"#002117","on-surface":"#141b2b","primary-fixed":"#b0f0d6","secondary-container":"#97f5cc","error-container":"#ffdad6","primary-container":"#064e3b","secondary-fixed":"#97f5cc","surface-container-high":"#e1e8fd","surface-dim":"#d3daef","outline-variant":"#bfc9c3","on-primary-fixed-variant":"#0b513d","on-background":"#141b2b","on-error":"#ffffff","on-primary":"#ffffff","tertiary-fixed-dim":"#4edea3","surface-tint":"#2b6954","surface":"#f9f9ff","tertiary-fixed":"#6ffbbe","error":"#ba1a1a","on-tertiary-container":"#31c98f","on-secondary-container":"#007353","inverse-primary":"#95d3ba","primary-fixed-dim":"#95d3ba","inverse-on-surface":"#edf0ff","on-surface-variant":"#404944","primary":"#003527","secondary":"#006c4e","on-primary-container":"#80bea6","surface-bright":"#f9f9ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.5rem","margin-desktop":"3rem","gutter-desktop":"2rem","space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"1rem"},"fontFamily":{"headline-sm":["Hanken Grotesk"],"headline-lg":["Hanken Grotesk"],"display-lg":["Hanken Grotesk"],"label-lg":["Manrope"],"display-lg-mobile":["Hanken Grotesk"],"body-md":["Manrope"],"body-sm":["Manrope"],"body-lg":["Manrope"],"label-md":["Manrope"],"label-sm":["Manrope"],"headline-md":["Hanken Grotesk"]},"fontSize":{"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+<aside class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="UniSwap Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XmD8WtfIitgDUHbTsFWw9_JS674cizbNRn01ZCpTEn9lXVJbIjM2K6ccqZhte4zIbEhWkNiNkDauGdFfjYFD315HIAxMgnJDhpC79fBs8KFF1Q5eHkOohrmaDors87YJrzRdT_Q5mbMS5Xmia9QnUHeqWwHg9X9nuSZakW4KCIDEQ2nJTD-q3UNFqlCJLAObEBG5TI5WZMd6_oytGlLh_DZuXfRZa2TtxMuqangqyE8J34bwdW4hRYED-F"/><div class="flex flex-col"><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">UniSwap</span><span class="material-symbols-outlined text-secondary text-[16px]">verified</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SPU Verified</span></div></div><nav class="flex flex-col gap-1" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2.5 transition-colors bg-secondary-container text-on-secondary-container font-semibold rounded-lg" data-path="marketplace" href="javascript:void(0)" onclick="navigateTo('feed')" id="navLinkMarketplace"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Marketplace</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="search" href="javascript:void(0)" onclick="focusSearch()" id="navLinkSearch"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-lg text-label-lg">Search</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="chat" href="javascript:void(0)" onclick="navigateTo('chat')" id="navLinkChat"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">send</span><span class="font-label-lg text-label-lg">Swaps &amp; Messages</span></div><span id="sidebarChatBadge" class="bg-secondary text-on-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="safezones" href="javascript:void(0)" onclick="navigateTo('safezones')" id="navLinkSafeZones"><span class="material-symbols-outlined text-[20px]">shield</span><span class="font-label-lg text-label-lg">Safe Zones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 my-1 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors" data-path="wizard" href="javascript:void(0)" onclick="navigateTo('wizard')" id="navLinkWizard"><span class="material-symbols-outlined text-[20px]">add_circle</span><span class="font-label-lg text-label-lg text-on-primary">List an Item</span></a><a class="flex items-center gap-space-sm px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="impact" href="javascript:void(0)" onclick="navigateTo('profile')" id="navLinkImpact"><span class="material-symbols-outlined text-[20px]">eco</span><span class="font-label-lg text-label-lg">Eco Impact</span></a><a class="flex items-center justify-between px-space-sm py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="notifications" href="javascript:void(0)" onclick="openNotificationsModal()" id="navLinkNotifications"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="font-label-lg text-label-lg">Notifications</span></div><span class="w-2 h-2 rounded-full bg-error"></span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="profile" href="javascript:void(0)" onclick="navigateTo('profile')" id="navLinkProfile"><img id="sidebarUserAvatar" alt="Profile" class="w-6 h-6 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhP8fGjjqa_GoT6lMe1BvxVgGRgyU2XVH_g2I1vIPUHsyAfnFZIVNRF7FjH9Bdo6UBbMQobOBekQzup2pC6snWuMZbiIa03wRVB07oqQCHxzefF0LmyQ6N5xiKL1pve1qjeYX9FbXQpwnnHmwXJ9vtCI1-bx3qe3oI8kF9UNMoYJrbKmORh9NorRQUJKO46xxNS4DtoGjne6gXjy_oH2fppf86v0kAru0O7aTtIr1lP8w09QO5No-KA"/><div class="flex flex-col truncate"><span id="sidebarUserName" class="font-label-md text-label-md text-on-surface truncate">Thabiso M.</span><span id="sidebarUserFaculty" class="font-label-sm text-label-sm text-on-surface-variant truncate">Faculty of Humanities</span></div></a></nav></div><div class="flex flex-col gap-space-sm pt-space-sm"><a class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" data-path="campus-safety-network" href="javascript:void(0)" onclick="navigateTo('safezones')"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Monitored Zones Active</span><span class="font-body-sm text-body-sm text-on-surface-variant">SPU Protection Officers</span></div></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="javascript:void(0)" onclick="openEditProfileModal()"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></div></aside>
+<div class="pl-[240px]">
+<header class="fixed top-0 left-[240px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md z-40 shadow-[0_1px_8px_rgba(0,0,0,0.03)] flex items-center justify-between px-space-lg">
+  <div class="flex items-center gap-space-sm overflow-hidden text-ellipsis whitespace-nowrap">
+    <span class="material-symbols-outlined text-secondary text-[18px] shrink-0">security</span>
+    <span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+      <strong class="text-primary font-semibold">SPU Safe Exchange Guarantee:</strong> Meet at approved campus zones (Central Library, Luka Jantjie Hall, Moroka Res) • Campus Safety Network Active
+    </span>
+  </div>
+  <div class="flex items-center gap-space-md shrink-0">
+    <span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+      <span class="w-2 h-2 rounded-full bg-secondary"></span> Live Guarded
+    </span>
+    <!-- Profile Dropdown Trigger -->
+    <div class="relative">
+      <button id="userDropdownTrigger" onclick="toggleUserDropdown()" class="flex items-center gap-2 focus:outline-none cursor-pointer">
+        <img id="navProfileAvatar" alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhP8fGjjqa_GoT6lMe1BvxVgGRgyU2XVH_g2I1vIPUHsyAfnFZIVNRF7FjH9Bdo6UBbMQobOBekQzup2pC6snWuMZbiIa03wRVB07oqQCHxzefF0LmyQ6N5xiKL1pve1qjeYX9FbXQpwnnHmwXJ9vtCI1-bx3qe3oI8kF9UNMoYJrbKmORh9NorRQUJKO46xxNS4DtoGjne6gXjy_oH2fppf86v0kAru0O7aTtIr1lP8w09QO5No-KA"/>
+      </button>
+      <!-- User Menu Dropdown -->
+      <div id="userMenuDropdown" class="hidden absolute right-0 top-11 w-64 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 py-3 px-2 z-50 flex flex-col gap-1">
+        <div class="px-3 py-2 border-b border-outline-variant/20 mb-1">
+          <p id="dropdownUserName" class="font-label-md text-label-md text-on-surface font-bold">Thabiso M.</p>
+          <p id="dropdownUserEmail" class="font-body-sm text-body-sm text-on-surface-variant truncate">thabiso.m@spu.ac.za</p>
+        </div>
+        <button onclick="navigateTo('profile'); toggleUserDropdown();" class="w-full text-left px-3 py-2 rounded-lg text-on-surface hover:bg-surface-container-low font-label-md text-label-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-secondary">person</span> View Profile
+        </button>
+        <button onclick="openSpuPassModal(); toggleUserDropdown();" class="w-full text-left px-3 py-2 rounded-lg text-on-surface hover:bg-surface-container-low font-label-md text-label-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px] text-primary">badge</span> SPU Pass
+        </button>
+        <button onclick="openEditProfileModal(); toggleUserDropdown();" class="w-full text-left px-3 py-2 rounded-lg text-on-surface hover:bg-surface-container-low font-label-md text-label-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">edit</span> Edit Profile
+        </button>
+        <div class="border-t border-outline-variant/20 my-1"></div>
+        <button id="authActionBtn" onclick="handleAuthMenuClick(); toggleUserDropdown();" class="w-full text-left px-3 py-2 rounded-lg text-error hover:bg-error-container/30 font-label-md text-label-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-[18px]">logout</span> Sign Out
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="relative pt-16 w-full min-h-screen bg-background">
+  <!-- View 1: Marketplace Feed (Screen 1) -->
+  <div id="view-feed" class="view-panel w-full">
+    <div class="flex flex-col w-full">
+<!-- Interactive & Filter Controller Script -->
+<script>
+    function toggleSave(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isFilled = icon.getAttribute('data-active') === 'true';
+      if (isFilled) {
+        icon.setAttribute('data-active', 'false');
+        icon.textContent = 'favorite';
+        icon.classList.remove('text-error');
+        icon.classList.add('text-on-surface-variant');
+        icon.style.fontVariationSettings = "'FILL' 0";
+      } else {
+        icon.setAttribute('data-active', 'true');
+        icon.textContent = 'favorite';
+        icon.classList.add('text-error');
+        icon.classList.remove('text-on-surface-variant');
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+
+    function setActiveDealType(btn) {
+      document.querySelectorAll('.deal-filter-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary');
+        b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary');
+      btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+    }
+
+    function setActiveSize(btn) {
+      document.querySelectorAll('.size-filter-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    }
+  </script>
+<!-- Main Feed Container with Editorial Spacing -->
+<div class="px-space-md lg:px-margin-desktop py-space-lg flex flex-col gap-space-lg">
+<!-- Instagram-style Story Highlights / Categories -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Campus Circular Curations</span>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">
+          Explore all channels <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="flex items-center gap-space-md overflow-x-auto pb-2 scrollbar-none">
+<!-- Story 1: All Items (Active Ring) -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-secondary to-primary-fixed shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px]">
+<div class="w-full h-full rounded-full bg-primary-container flex items-center justify-center text-on-primary transition-transform group-hover:scale-105">
+<span class="material-symbols-outlined text-[24px]">dataset</span>
+</div>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">All Items</span>
+</button>
+<!-- Story 2: 100% Free / Donations -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-secondary-fixed-dim to-secondary shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px] overflow-hidden">
+<img class="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110" data-alt="A beautifully styled flat lay of folded knitted sweaters and floral print summer sundresses on a warm stone tabletop with botanical sprigs, soft morning natural light, high fashion collegiate mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Igp2wTwgYyF6_e5AM7LuwMgXvK6plkaTdhVzIpG-uz567Tq4h1JdEQ0vzk61NkAom4FEyT-UQj-5k3mVGll1ry-flVA3TFUQw4ebXc5vspe4QUSXIPOpGHNACUPf3uWUgvDjIzmE4s9xU2z3NwfoeHYD4JzUBH-w1jhk3djM0hXW0QXF4nryzgAd6XYjoHKnCDhndvbVIKMrwAxfHBaw-Km40TX13ZL_UUPxoabi9pBrnKuUevO2DQ"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Free Donations</span>
+</button>
+<!-- Story 3: Graduation Attire -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-surface-variant to-secondary-container shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px] overflow-hidden">
+<img class="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110" data-alt="Official university academic regalia graduation gown folded meticulously beside an emerald green embroidered faculty sash and mortarboard cap with crisp architectural campus pillar backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-q1uKrztpwe-KBL3Hmgg29_xoza3vyqFSXkOWBLJpth8iHOt2F2MWFh6E925uMOwtgeiVfPRHx3cHg2rzc8oaONEp7rQJIqd-GrXjY0i6b2Ob9eK9nddI9bffo0ngud6LCsAfutDSo9UhKZTgoFb7JIlEW-iy_tRl53sotxMKkXNwUfFisRmdENJu0dbHGIoGJUAubfe-C3Twa1Uqu5SmKHdlmr6tEsnCOyrFBJL-M68l-xXckkNjAA"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Graduation &amp; Hire</span>
+</button>
+<!-- Story 4: Campus Tees & Sweaters -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-surface-variant to-secondary-container shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px] overflow-hidden">
+<img class="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110" data-alt="Collegiate heather grey and dark forest green oversized vintage sweatshirts layered with crisp cotton collars, minimal studio photography styling, soft warm glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGqozIfW75JekgK5FBDlWI1OmA_65JcSbvShlAzshmxnbQljE7rtVDPrzrk0lHbHRXUKiGv7EzLKGCQ0iMkvX9ph1mrXlyUCVTFhZcX6PKV_Or-HinK7D956aRf3UVtq-GbwUdjS5kLj55SYjDNJMuKywuuQZzsbZeErI8S-Nwg84XkmNNUkm0Zv71dZXIxxuDzfx0yfLbG9b2UONrHNPCoM-eF9EPE5usaVg6BMAmiEHnkBVBfKbWPw"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Tees &amp; Crewnecks</span>
+</button>
+<!-- Story 5: Denim & Trousers -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-surface-variant to-secondary-container shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px] overflow-hidden">
+<img class="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110" data-alt="Vintage straight fit washed denim jeans with customized graphic embroidered patches folded neatly over a modern minimalist concrete bench, editorial collegiate denim catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlARmqQ_NYAHIVE3ZSVgaIs-kqDHpwALmZ9oIjG-djk-pHv0ee_3cov-FpKka1MfUpRGvY5xsiFQ2Mjd7j86PchtlzNmKx1WIC-c46h_HLauIPGjf0TkiDrC9P9Fri-b8SW2KuDgQE4hgFZeXigXYz-0wF8Mpb2IORT5o7-IRccm3AE7BhbAk60kOv9kTIqDrYSSMep0G0bLXLHSFdby5YQrOLCUKagQFmaeZYo6U0-9exJDC6cwx4sQ"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Denim &amp; Trousers</span>
+</button>
+<!-- Story 6: Footwear & Boots -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-surface-variant to-secondary-container shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px] overflow-hidden">
+<img class="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110" data-alt="Clean classic white leather platform sneakers and rich amber leather lace-up combat boots side by side on natural clay stone steps, contemporary footwear editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9Y0_P2AhJCvSbmGe8vGPiKC73JghUO7n7cAekB4oGlSj6I7LViGLTu-ExzrDyaf4GRVAicnrQk72UQe318lQJO-C4SbWQOOS3gBH1jRoyK_qIpocRJJSiYVAEWNvUx_aGRMgnXTFwMddJaxtKdVKTbQLSWQ91vDQmpUcGuDZ_PYJrFokH4DYZssQ1ZjgWfKS3PZsawWFnEy4NHt_Yz9A0QrabIjCLv8xxwgI9j_O2Eywu2NC7e44QA"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Footwear &amp; Boots</span>
+</button>
+<!-- Story 7: Academic & Lab Kits -->
+<button class="flex flex-col items-center gap-1.5 shrink-0 group focus:outline-none">
+<div class="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-surface-variant to-secondary-container shadow-sm">
+<div class="w-full h-full rounded-full bg-surface-container-lowest p-[2px] overflow-hidden">
+<img class="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110" data-alt="Crisp white laboratory lab coat paired with university engineering textbooks and architectural drafting instruments placed on a clean wooden library workstation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDNOoAnlpOw-KAPQJXxrdAlYYbYA6x6ifIwY7Qj2txB6-CziAypuoj5R3QGdhK2ybO9nZZST8g5419Xiirr04wvMskXSmXShzH9uYxWCBuCOumykzWFf_8nA0Cg9LFkKQcAqRNavVyisuXgX1t5nmi-2dc-n63GoHXLIxCXE4JJudZtIKQbesiAkLqaSIqNnixUEJeThF4ay-oUWIITKu0rV8Iq17QgVkPmsTqxHqwPucVpsFCCYOJyQ"/>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors">Lab &amp; Academic</span>
+</button>
+</div>
+</section>
+<!-- Compact Campus Eco-Impact Stats Banner -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-secondary-fixed-dim/20 blur-2xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">eco</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary">Sustainable Style for SPU</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">Circularity Live</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Peer-to-peer campus swaps preserve student budgets and eliminate fashion landfill waste in Kimberley.</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm lg:gap-space-lg bg-surface-container-low p-space-sm rounded-lg shrink-0">
+<div class="flex flex-col px-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">1,420 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Textile Waste Diverted</span>
+</div>
+<div class="flex flex-col px-space-sm">
+<span class="font-headline-sm text-headline-sm text-secondary">840+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Completed Swaps</span>
+</div>
+<div class="flex flex-col px-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary">R 42,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Saved by Students</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Comprehensive Multi-Filter Bar -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Search Input & Campus Quick Selection -->
+<div class="flex flex-col lg:flex-row items-center gap-space-md justify-between">
+<div class="relative w-full lg:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md pl-10 pr-4 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container placeholder:text-on-surface-variant" id="searchInput" placeholder="Search windbreakers, Levi's, blazers, graduation gowns..." type="text" onkeyup="handleSearchKeyup(event)"/>
+</div>
+<!-- Campus Zone Fast Filter Selector -->
+<div class="flex items-center gap-2 overflow-x-auto w-full lg:w-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">fmd_good</span> Zone:
+          </span>
+<button class="px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0 font-semibold transition-colors">
+            All Campus Safe Zones
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0 transition-colors">
+            Central Library
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0 transition-colors">
+            Luka Jantjie Hall
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm shrink-0 transition-colors">
+            Moroka Residence Desk
+          </button>
+</div>
+</div>
+<!-- Secondary Filter Row: Deal Types, Price, Size -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<!-- Deal Type Pills -->
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Deal Type:</span>
+<button class="deal-filter-btn px-3 py-1 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-colors" onclick="setActiveDealType(this)">
+            All Deals
+          </button>
+<button class="deal-filter-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" onclick="setActiveDealType(this)">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Direct Swap
+          </button>
+<button class="deal-filter-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" onclick="setActiveDealType(this)">
+            Cash Sale
+          </button>
+<button class="deal-filter-btn px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" onclick="setActiveDealType(this)">
+<span class="material-symbols-outlined text-[14px] text-tertiary">featured_seasonal_and_gifts</span> 100% Free
+          </button>
+</div>
+<!-- Price Range & Size Controls -->
+<div class="flex items-center gap-space-lg flex-wrap">
+<!-- Price Range Inputs -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Price:</span>
+<div class="flex items-center bg-surface-container-low rounded-lg px-2 py-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">R</span>
+<input class="w-12 bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="minPriceInput" placeholder="Min" type="number" value="0"/>
+<span class="text-on-surface-variant mx-1">-</span>
+<input class="w-12 bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="maxPriceInput" placeholder="Max" type="number" value="300"/>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- Size Pills -->
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Size:</span>
+<button class="size-filter-btn w-7 h-7 rounded-lg font-label-sm text-label-sm bg-primary text-on-primary transition-colors" onclick="setActiveSize(this)">All</button>
+<button class="size-filter-btn w-7 h-7 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-colors" onclick="setActiveSize(this)">S</button>
+<button class="size-filter-btn w-7 h-7 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-colors" onclick="setActiveSize(this)">M</button>
+<button class="size-filter-btn w-7 h-7 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-colors" onclick="setActiveSize(this)">L</button>
+<button class="size-filter-btn w-7 h-7 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-colors" onclick="setActiveSize(this)">XL</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Visual Feed: 4-Column Instagram Post-Style Editorial Grid -->
+<section id="listingGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- CARD 1: Retro 1990s Colorblock Windbreaker -->
+<article onclick="openDemoDetail(1)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<!-- Image Container (4:5 Aspect Ratio) -->
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Vintage retro 1990s colorblock lightweight nylon windbreaker in dark forest green, crisp navy blue, and white panel stripes displayed flat on urban concrete background, high fashion editorial look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8l-7jOAB8RbnSedMkPy-r0fUZ0jYW7gar3nvnN9Rlv75SDHk9m-EBe9BjpWIo2k361zl_0MJmr0DE1iCOpkUJtOB3mstiTfgJyezYjJgIz_T_zWmy2wp1ODbV4dvECaEcU7F1Pll55Q1BB5klrBoZNOZg1AstCV4MX3fx930K6sWqZ1CegvG7v9ekdLN3J8jELFQyPQ1pXmlla0ZPF2Gsmou7wGxivlV5xurb6ipzmrOPKs8Ce3e-pA"/>
+<!-- Deal Tag Pill -->
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> Direct Swap
+            </span>
+</div>
+<!-- Save / Favorite Button -->
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<!-- Safe Zone & Spec Badge (Overlayed lower image) -->
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Student Union</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Size L • Good</span>
+</div>
+</div>
+<!-- Content & Student Info -->
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Campus Admin</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 98% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Retro 1990s Colorblock Windbreaker</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Lightweight water-resistant windbreaker in forest green, white and navy. Looking for oversized fleece or denim jacket.</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span> Propose Swap
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: Thrifted Botanical Sundress (100% Free Donation) -->
+<article onclick="openDemoDetail(2)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Delicate vintage botanical floral print slip sundress in earth olive and cream hues draped elegantly against rustic sunlit campus courtyard masonry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR4oYx_T7jii8A6Kf0BT32LGyp-0aGXE7ZK6KffatEsS1-hQAC35JBv1hvcwPCIjA4zPf1C_9UW1voG-fay-hgcoCv79RmcNAg0wiQZibBiiBxOKWaz5lD9vaa3shREFrofoj4iCyMw-uXdtRTxIwbz4MbDys9PcpR-4XV_artNWonCsGycSqk98IdTTbkh1V_Jut6ux8QLOtd4UKFbAIjhwPc7euDluZtEv5-MBexJfJ6GODjK4uL6A"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-error-container text-on-error-container shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span> 100% Free Donation
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Central Library</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Size S • Like New</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Kagiso M.</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 100% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Thrifted Botanical Sundress</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Gorgeous breezy floral print dress. Free donation to any SPU student as I am graduating. Zero cost claim!</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-variant font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">redeem</span> Claim Free Item
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3: Chunky White Platform Sneakers -->
+<article onclick="openDemoDetail(3)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Chunky pristine white leather platform sneakers shot front-angle against a minimalist soft green backdrop, clean sole ridges and laces in sharp commercial focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ15jJ46uKtUZTDeJrc0IpIMgy1Cx5h80CGONowYYG0rosqBdYcPfFr2MHUVOL1A26VLAsK1BLH3VP2-LPpxXoYYSxusoP-UNwUDeFXNeAfIVqiXlPIJtQOzbMxATTGt2O9PoFRh4Kswr7qcoxRlyx9s2lCPK_AJTuH9ZHVJcFMRu6lwd5RLcpYeA2vvrsZJ1tVi-T-CwFMMTe-crq4YfkWVHuHEObpcv7Dgea4lXOh78Yz3L80If_Mw"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">payments</span> Cash Sale • R 220
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Moroka Dining Hall</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">UK 6 • Like New</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Lerato D.</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 95% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Chunky White Platform Sneakers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Worn twice for orientation week. Deep cleaned soles, cushioned footbed, spotless white finish.</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Reserve (R220)
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 4: SPU Academic Gown & Mortarboard Set -->
+<article onclick="openDemoDetail(4)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Official university academic graduation black gown with satin emerald green trim draped on tailor mannequin, beside black velvet mortarboard tassel cap." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJBhuGqAooT9Lsi-SlIt0EcfOLHHrl3JJBSNa8lxwaqn_r7zZns4VQseYJXlkbckuOKSFY7RywNhLemWESuXRM5ClYlxSQAtLNtV-6PhdCB_8zHVa4uq8Tx1WCBp_YCw6Ef7NuKyXJF9hnvHGzh8gDiFhPQdMSzF7zNZg9BP0w0t54l-Vs03vghLG0FTK5GOa-NcFvSb8wM1V1jokuCHw7pGhQf0N6UK4YjeiYpYW6uETv7PBehwc1QQ"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">school</span> Hire or Swap
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Central Library</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Std 54 • Pristine</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Alumni Office</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 99% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1d ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Academic Gown &amp; Mortarboard Set</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Available for ceremony hire or purchase/swap. Worn once during spring graduation. Fully sanitized.</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">event_seat</span> Reserve (R250)
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 5: Vintage Levi's 501 Straight Fit -->
+<article onclick="openDemoDetail(5)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Student model standing in warm natural daylight wearing mid-wash vintage customized Levi's 501 denim jeans with custom badge embroidery, editorial street fashion shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSa_8QnRvfDfCHelxZod5YX_6AyO94h5w4OSD8U1biJmYt_z71PUWCxTbud_fs74NQy5ubhfNGusk2aQOqI9dy8UZRKXsZnYtHCAqEhW13StdipqXdgHh-56nC4EsY4Iov_AYbksMHLMlZZH5O8V9FglwWhf63tJ-Y6iLgRpmd_zGf_jhZMi6EhtH9Nh0-9RJwieL3UNPnfj_iBbinNB0mijlMRyUPS1Lh-EhfM2GFXvjsyP4Skrlj1Q"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> Direct Swap
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Central Library</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">W32/L32 • Good</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tebogo K.</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 97% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Vintage Levi's 501 Straight Fit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Mid-wash authentic Levi's 501 with tasteful retro patches. Open to swap for workwear carpenter trousers.</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span> Propose Swap
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 6: Herschel Classic Navy Student Backpack -->
+<article onclick="openDemoDetail(6)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Classic navy blue student canvas travel backpack set against clean architectural sunlight on a campus ledge with books and laptop sleeve visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw5dCyzNvFYZtiDHmuiJyFwriuY9RXCI0ZbZCq0mqttbIAj-8GBUMMnx8AG_ptB2RtDC8-_gl8V3eNp2TWPHZ9qeqcG7qqBAwL-XHxyypEevkHeJHjCubpsSnkY24080BYSBDRgm8agJ9o4m8w9H-C8hzATf9b68GjLNUEZ1vM7peRjiz_DyUMHHRSuKMwPCOmnqe9kp1o8HsYyVCvM42m26UkvcT7ZxeGefNe7MjSIFLeuwbMsHLZuw"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">payments</span> Cash Sale • R 260
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Luka Jantjie Wing</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">24L • Like New</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Sipho N.</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 96% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Herschel Classic Navy Backpack</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Signature striped interior fabric, 15-inch padded laptop pocket, immaculate condition with intact zips.</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span> Reserve (R260)
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 7: Collegiate Grey Vintage Crewneck -->
+<article onclick="openDemoDetail(7)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Overhead flat lay of an oversized heavy cotton heather grey varsity crewneck sweater layered with knit beanie and denim pants, cozy autumn student lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhhzuJ0Pz8dJCkyI-w67-j3hqSOGlIy2tRcT__c2ow67En-4bUb9nN4fNsKX8mt0-hqBTseVenu380_c9BTd6QoUm_6-Fo4Xr6Mcvxh8Q2eR5-YpqX0sSmLg15XZyfYQQRWTyX0kq1cu8e_gEehSWT2-IBjygGz4iY4ijbRiF84ljbDpoddM1e65TujmtlgYzRgORVHaLS7lVGBlTyyWru0v3uypZd0PI_XnE5TtrJnPeIGMEFY1yxtA"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> Direct Swap
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Luka Jantjie Wing</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Size XL • Like New</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Anrich V.</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 94% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Collegiate Grey Vintage Crewneck</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Heavyweight 80s style athletic crewneck. Super warm, clean ribbing. Swapping for hoodie size L/XL.</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span> Propose Swap
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 8: Dr. Martens 1460 Smooth Leather Boots -->
+<article onclick="openDemoDetail(8)" class="cursor-pointer bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Classic lace-up leather boots with contrast stitching shot outdoors on textured campus flagstones with autumn leaves, atmospheric editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARq3PZGT22yzejzJFppqGonQK125yfM8aTLiAbdQDyBlNuzLFYjgGE0hAKYMawO4pFKbcrVZ0PHTmx5BXZeACQedZ3jxyoCiuNjAoMZxu5WrngoH52BwLiAAg2bf0XlcJIGDf4yf2lzJtrexIbxzFx2UEYoDhL23v7aIRXPZn9ddFhoqMNP9gb2XnioAu79YSE6itgpljLio09ea0JuQY2KVO1Xm5KQij6iYJLn-q9HUlq3piEwqHd5Q"/>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> Direct Swap
+            </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center hover:bg-surface-container-lowest transition-colors shadow-sm focus:outline-none" onclick="toggleSave(this)">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant" data-active="false">favorite</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md rounded-lg px-2.5 py-1.5 shadow-sm">
+<div class="flex items-center gap-1 text-on-surface truncate">
+<span class="material-symbols-outlined text-secondary text-[16px]">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate font-semibold">Central Library</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">UK 5 • Good</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Nthabiseng P.</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">• 98% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12h ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight line-clamp-1">Dr. Martens 1460 Boots</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Authentic durable leather with yellow welt stitch. Lightly broken-in, pristine air-cushioned sole. Open to swaps!</p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span> Propose Swap
+            </button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Message owner">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Bottom Circular Collective & Safety Protocol Summary Section -->
+<footer class="mt-space-lg bg-surface-container-lowest rounded-xl p-space-lg shadow-sm grid grid-cols-1 md:grid-cols-4 gap-space-lg">
+<!-- Col 1: Identity & Endorsement -->
+<div class="flex flex-col gap-space-sm md:col-span-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">change_circle</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary">UniSwap SPU</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          The student circular fashion and pre-loved essentials collective at Sol Plaatje University, Kimberley.
+        </p>
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold pt-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>SPU Sustainability Council Endorsed</span>
+</div>
+</div>
+<!-- Col 2: Marketplace Safety -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold mb-1">Marketplace Safety</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span>Central Library Meetup Point</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield_person</span>
+<span>Luka Jantjie Security Zone</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">desk</span>
+<span>Moroka Residence Desk</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">badge</span>
+<span>Verified Student ID Required</span>
+</div>
+</div>
+<!-- Col 3: Student Eco Impact -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold mb-1">Student Impact</span>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">3,420 kg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Textile waste diverted from landfill</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex flex-col mt-1">
+<span class="font-headline-sm text-headline-sm text-secondary">R 184,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Student wardrobe savings to date</span>
+</div>
+</div>
+<!-- Col 4: Campus Life Links -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold mb-1">Campus Life</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Textbooks &amp; Academic Notes</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Graduation Attire Hire</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Dorm Moving-Out Donations</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Campus Safety Protocols</a>
+</div>
+</footer>
+</div>
+</div>
+  </div>
+
+  <!-- View 2: Item Detail & Exchange View (Screen 4) -->
+  <div id="view-item-detail" class="view-panel hidden w-full">
+    <div class="flex flex-col w-full">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1 hover:text-primary transition-colors cursor-pointer" onclick="navigateTo('feed')">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Back to Campus Feed</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span>Faculty of Natural &amp; Applied Sciences</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Post #SWAP-8924</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Active Listing • 14 Students Viewing
+      </span>
+<span class="text-outline-variant">|</span>
+<button class="hover:text-primary transition-colors flex items-center gap-1" id="shareBtn" onclick="navigator.clipboard?.writeText(window.location.href); alert('Item link copied to clipboard!');">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Share</span>
+</button>
+</div>
+</div>
+<div class="w-full max-w-[1140px] mx-auto px-space-md py-space-lg flex flex-col gap-space-xl">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Column: Gallery & Verified Provenance (7/12 ~ 58%) -->
+<div class="lg:col-span-7 p-space-lg flex flex-col justify-between bg-surface-container-low/40">
+<div class="flex flex-col gap-space-md">
+<!-- Main Showcase Image Frame -->
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container shadow-md group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial close-up of a vintage 1990s colorblock windbreaker athletic jacket in forest green, navy blue, and crisp white paneling laid flat on raw limestone campus architectural concrete, soft natural morning daylight, collegiate aesthetics, premium textile texture, ultra-high resolution photography." id="mainDisplayImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFLfU6gbqtmb2gHg6YSSefS0OIf-ocm3bEvZ5OJD1WJ4OnS0v40DLI_EkvqCnGNkkzMx6nhQLLjN-jRajxmG7hr2Q-L76mIdsAWOE52N4TFDZ7R_52ylUTTaP3DOXBMmDr6D9Ejgv5W_STjNBfolzA0jRa1iVHpDhGksO1VIUXbA0EGtYNc22Go-br1YRTH1s868zmAR-QwCnrJSEDZqKyW2ACuULXBZXhWcSRp4ZgO8EF6cPTekTr1Q"/>
+<!-- Top Left Floating Badges -->
+<div class="absolute top-space-md left-space-md flex flex-col gap-space-xs items-start">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">verified_user</span>
+                SPU Verified Authentic Pre-loved
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-label-sm backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+                Inspected at Central Library Desk
+              </span>
+</div>
+<!-- Top Right Live Status Pill -->
+<div class="absolute top-space-md right-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 text-secondary font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Available for Swap
+              </span>
+</div>
+<!-- Bottom Image Overlay Quick Detail -->
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/30 to-transparent flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span class="font-label-sm text-label-sm">High-res inspection • 4 photos verified</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest/20 backdrop-blur-sm">SPU Sol Plaatje Univ.</span>
+</div>
+</div>
+<!-- Thumbnail Strip Carousel -->
+<div class="grid grid-cols-4 gap-space-sm pt-space-xs">
+<button class="thumbnail-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 ring-2 ring-primary" onclick="changeThumbnail(0, this)">
+<img class="w-full h-full object-cover rounded-md" data-alt="Front view photograph of vintage retro 1990s colorblock windbreaker with forest green top, navy blue midsection, and white horizontal accent striping, zipper detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADE030qAfJQ1oZJfc3paa3nicuqe_-EbETBROURlHjAMDZ6YkYsYuHVkr2FpRXtwhzQnpFjFMgf7NRd5go6m79hSGu3CvcoYo2r_DzqpUfZMffky7dQOcEMqdNvECiRcPJeJq_ccs584wxj8Gb1I0f1xAhgSMFkl_ABrFETk5ZI_-_Wz0S6Q2a1pGuwNUus9sdCvHKgc-cVyVCepx-7EGsCRcrenH_c-VEMaYRU3FMDSaqeGQFFOC89w"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-inverse-surface/80 text-[10px] text-inverse-on-surface font-label-sm">Front</span>
+</button>
+<button class="thumbnail-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 hover:ring-2 hover:ring-primary/60 transition-all" onclick="changeThumbnail(1, this)">
+<img class="w-full h-full object-cover rounded-md" data-alt="Rear back angle of vintage forest green nylon track jacket, showcasing athletic paneling and clean back collar, natural studio daylight on cream linen backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm1FK7mR22viIfqPUMC6BBOLY4j4UZvhPvLLHjcUaLq1w_2wGlCPvGqjcKSpiITjUSqtVaekXFMZkBVfawDIHgNUZIQzEYyQ7CQDAHIPX2nF3xfLJrKFQPKGw1qTrkUtYBZRRu9_wCuDZqZaSPv4XuhyTP1DzmcDr_MsQ_dimOyEUuIVyLmSc4G38Gg3eqXODK9JBKDh3tcbttOwUQdnKjT7WpOCP3gmAVF8x29LRVG4MLvrJhCTsJ5w"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-inverse-surface/80 text-[10px] text-inverse-on-surface font-label-sm">Back</span>
+</button>
+<button class="thumbnail-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 hover:ring-2 hover:ring-primary/60 transition-all" onclick="changeThumbnail(2, this)">
+<img class="w-full h-full object-cover rounded-md" data-alt="Extreme macro close-up of garment fabric care label verifying 100% Recycled Ripstop Nylon, authentic retro embroidery stitching, pristine tag condition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhFURyVsXu3ACuzzBvPvlRBr92WcI-NZpr0DAXsL7-wmHg4-u2DrFqOGNgE7XxQE5Shz8PPEGJCSy0EGyl43GU30JUuDzz4CK7kOe8_fCBwtBjDjcb47rPEz6GklQzIRebUw8HKKZ82n7BOgaX50LaTIV5YvBJxpoV5NyFKk12B3WXV1rHSMFBzP0Gq1Pr8ZrrFQw0WwCGNjFUD7KP8iFkCCVyVhl0gx7DcNON8zxHLJCU8w2jDXARQ"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-inverse-surface/80 text-[10px] text-inverse-on-surface font-label-sm">Tag</span>
+</button>
+<button class="thumbnail-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container shadow-sm p-0.5 hover:ring-2 hover:ring-primary/60 transition-all" onclick="changeThumbnail(3, this)">
+<img class="w-full h-full object-cover rounded-md" data-alt="Detailed close up photograph of brass heavy-duty YKK zipper pull and collar drawstring on forest green nylon windbreaker, showing authentic patina and mint zipper teeth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtwz5pr-qFl2epyhV-5BSUp_H3qCCNPVus7zYGCvSxxuznZhIrMrcl9eTF1GUiy9izHoEZgX7bmur1KnvIpWXCyqBZMsED4AVNOn_nqmjUbgIU2Vtb8eqg_heq-j_dcdXhx5c3zkqUtEWWUoZoE5Qqg0xVEzdE8iOffJLkqUCclFOVwECEF2OfUNgZX0uGuRDFkcEguIyhMzRedejjE7rbHzixb6EhryXZZnhT87c2XAfA24mLp31Gtw"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-inverse-surface/80 text-[10px] text-inverse-on-surface font-label-sm">Detail</span>
+</button>
+</div>
+</div>
+<!-- Campus Safety Assurance Banner below image -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-high/60 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Campus Anti-Scam Protocol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero payments outside verified student IDs. Handover strictly inside guard posts.</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-semibold hover:underline shrink-0" href="#">Safety Guide</a>
+</div>
+</div>
+<!-- Right Column: Inspector Stack & Action Center (5/12 ~ 42%) -->
+<div class="lg:col-span-5 p-space-lg flex flex-col justify-between bg-surface-container-lowest">
+<div class="flex flex-col gap-space-md">
+<!-- Student Creator Mini-Profile Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm ring-2 ring-primary/20" data-alt="Portrait photo of Kabelo, an enthusiastic young university student with short clean hair and warm smile wearing a collegiate dark green sweater, natural outdoor library lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAORNRu5JDGIYBZPCjSlTOVxYidNIjoQP85DBAG_xdYC8dhlNI1gNfUvzONg6bcGFvi2YH2evfyYKy8GANNPdCasaV6gfZwfpbkh6u2gxFLEsPmd1t281eh7RSBH2pLjq_OCenn0Gtcnf9RQr9zAFrEPXJ3DnsbeIX3xEbyn0ITXt0UkQkhtSdxp-OCl1pct5fWbH2o1krmvFfL_BGAbZP4m30PR5IOrZX6wI9kXppyyxoElv5TGTS8kA"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Kabelo M.</span>
+<span class="material-symbols-outlined text-secondary text-[16px]" title="SPU Student ID Confirmed">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">20210842@spu.ac.za • 3rd Year</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Faculty of Natural &amp; Applied Sciences</span>
+</div>
+</div>
+<!-- Trust Badge Card -->
+<div class="flex flex-col items-end bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">99% Trust</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">34 Completed Swaps</span>
+<span class="font-label-sm text-label-sm text-secondary-container bg-primary-container px-1 rounded text-[10px]">Resp &lt; 15 mins</span>
+</div>
+</div>
+<!-- Title & Terms -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Vintage Archive Drop</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Retro 1990s SPU Colorblock Windbreaker</h1>
+<!-- Value / Trade Terms Banner -->
+<div class="p-space-sm rounded-lg bg-surface-container-high/70 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Owner's Preferred Terms:</span>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">swap_horiz</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Direct Item Swap (Size M Hoodie)</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">OR R180 Buyout</span>
+</div>
+</div>
+</div>
+<!-- Metadata Spec Chips -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[18px]">straighten</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tagged Size</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Men's Large (Relaxed)</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Condition</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Excellent • Like New</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[18px]">texture</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fabric</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">100% Recycled Nylon</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[18px]">sanitizer</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hygiene Status</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Pre-Washed &amp; Steamed</span>
+</div>
+</div>
+</div>
+<!-- Eco Impact Visual Metric -->
+<div class="p-space-md rounded-xl bg-gradient-to-r from-primary-container to-secondary flex items-center justify-between text-on-primary shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary-fixed text-[22px]">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-tertiary-fixed">Sol Plaatje Eco Impact</span>
+<span class="font-body-sm text-body-sm text-on-primary/90">This trade saves <strong class="text-tertiary-fixed font-semibold">3.2 kg CO₂</strong> &amp; diverts <strong class="text-tertiary-fixed font-semibold">450g</strong> textile waste.</span>
+</div>
+</div>
+<!-- Circular Progress Indicator Graphic -->
+<div class="relative w-11 h-11 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-on-primary/20" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary-fixed" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-[10px] font-bold text-tertiary-fixed">88%</span>
+</div>
+</div>
+<!-- What is Kabelo looking for? Wishlist Card -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+<span class="font-label-md text-label-md font-bold">What is Kabelo looking for?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              "Open to trade for: <span class="font-semibold text-secondary">Oversized knitted sweaters</span>, corduroy jackets, or a clean white <span class="font-semibold text-secondary">Biology lab coat (Size M)</span> for next semester practicals."
+            </p>
+</div>
+<!-- Safe Exchange Zone Selector Dropdown -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="campusMeetupZone">
+<span class="material-symbols-outlined text-secondary text-[16px]">shield</span>
+              Select Monitored Safe Meeting Zone:
+            </label>
+<div class="relative">
+<select class="w-full pl-9 pr-8 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-high transition-colors appearance-none cursor-pointer" id="campusMeetupZone">
+<option selected="" value="central-library">Central Library Hub (Guard Station Safe Zone) [Recommended]</option>
+<option value="luka-jantjie">Luka Jantjie Hall Campus Security Desk</option>
+<option value="moroka-res">Moroka Residence Guarded Turnstile Entrance</option>
+<option value="student-centre">SPU Student Centre Dining Plaza Gate</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-secondary text-[18px] pointer-events-none">pin_drop</span>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="pt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-3 px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg active:scale-[0.98]" id="proposeSwapBtn" onclick="openProposalModal()">
+<span class="material-symbols-outlined text-[20px]">swap_calls</span>
+<span>Propose Direct Swap</span>
+</button>
+<button class="px-space-md py-3 bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container rounded-lg font-label-lg text-label-lg font-semibold flex items-center gap-1.5 transition-colors" onclick="document.getElementById('instantBuyDrawer').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>R180 Buyout</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors" onclick="alert('Chat session initiated with Kabelo M. (ID: 20210842). Messages are recorded in SPU Safe Swaps.')">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Message Kabelo</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors flex items-center justify-center" id="saveItemBtn" onclick="toggleSave(this)" title="Save to Wishlist">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">bookmark</span>
+</button>
+</div>
+<!-- Hidden Buyout Helper Drawer -->
+<div class="hidden p-space-sm rounded-lg bg-surface-container-high flex flex-col gap-2 transition-all animate-fadeIn" id="instantBuyDrawer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Immediate Campus Purchase</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">R180.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Funds held in escrow by SPU Student Society until physical handover is confirmed at selected guard post.</p>
+<button class="w-full py-2 bg-secondary text-on-secondary rounded font-label-md text-label-md font-bold" onclick="alert('Proceeding to SPU Student Card / EFT Escrow confirmation...');">
+              Pay via Campus Card / EFT
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Campus Offers, Bids & Discussion Drawer -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">forum</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Community Offers &amp; Swap Inquiries</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold">3 Live Bids</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SPU ID verification strictly enforced</span>
+</div>
+<!-- Offers Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Bid Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Avatar photo of Nandi, a female university design student wearing stylish glasses and hair in braids, high-contrast creative profile lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsTfxGGz5IIfF_kRwCtJyg8iy2qPGmNhbexbi0aOvZEDQTQdk2sGeIipGQSgpRpHCoUQ29EbS_SjQ-t1pjp8idSdkBQW6P4fOMWxAew9zvMJYuzUqP8L2pm9CdQbTMQyOxyBSUfBhwLZAjgcpKi_NNX8rfz_9eFv5ScfjFZ7db-cACF7BYWgpw58gr6czPpz-XF22UeJ-76Comesa2JJlxjJb0pxxvdU8rf_CnqjiOn4iOUiWe4M6YHA"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Nandi Z.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Faculty of Humanities</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-[11px] font-bold">Swap Offer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            "Hey Kabelo! I have an olive green oversized wool knit (Size M) from Cotton On, barely worn. Happy to meet tomorrow at Central Library around 13:00!"
+          </p>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm">2 hours ago</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Under Review by Kabelo</span>
+</div>
+</div>
+<!-- Bid Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Avatar photo of Lerato, a university student in an orange beanie, bright daylight on Kimberly campus garden background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAll1YiKRzoKq_Br47AWipE78wNrv8yMqrDBFE6iI_38MLPPBT2mGYV5wYhMQe-kYbKN_xTBBKPvxbI31tl-SWMp9CraeCgCCu9JG3z3DF2On2sYZb8vMIHK2E3ljQSeolbYXLgU2LhF8f0nytj9Pn-NAv2F9Vxipi7GvaRwCSXWLCDVZgc-AsVMOYMP5NvLiccd5r7-ApCF6aqtLSSm-OEKMe13aVqytwSMoa2wdIiuzo0JamNBiRjQA"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Lerato K.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Faculty of Education</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold">Cash Offer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            "Offering R180 pure student bargain buyout! Can pick up right now at Luka Jantjie Hall guard station between lectures."
+          </p>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm">4 hours ago</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Waiting for Kabelo</span>
+</div>
+</div>
+<!-- Bid Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm hover:shadow-sm transition-all">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="Avatar photo of Sipho, a male student wearing navy campus rugby jersey with energetic friendly expression, outdoors at Sol Plaatje campus quad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcpJr_3t9ahftgxOpOdP2HBc_qLMa_hKcjxtu4IztdHgp103xuAl0X0tHC8SMOSO-9eCPlC6GIVFxPf-cQGQFnc653Ba99vLH3V5h1PrkXGwQ0_guQkvGqOULIuNr-44JJgabIaadteGIDTe7vg8Z_uw3DMx362Y7-uhbpve-fHVOVfe7PrvVQVd9ul5PH8kkrMmdlYtKNS31cf5JDdC2Ro7FsqQwqHtSKhlD8E1CvY3XauNHeistEbw"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sipho D.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Natural &amp; Applied Sci</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[11px] font-bold">Question</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            "Is the hood packable into the collar or detachable? Need something weather-tight for cycling down Bultfontein Rd."
+          </p>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Yesterday</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Answered by Seller ✓</span>
+</div>
+</div>
+</div>
+<!-- Quick Comment / Bid Form -->
+<div class="mt-space-sm pt-space-sm flex items-center gap-space-sm">
+<input class="flex-1 px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-high transition-colors" id="publicInquiryInput" placeholder="Ask Kabelo about sizing, condition, or suggest an open trade..." type="text"/>
+<button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shrink-0 flex items-center gap-1.5" onclick="postCampusComment()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Post Question</span>
+</button>
+</div>
+</div>
+<!-- Campus Safe Zone Interactive Map Section -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">location_searching</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Campus Guarded Handover Point: Central Library</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All peer swaps occur within reach of active Sol Plaatje University campus protection officers.</p>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          Campus Safety Live Patrol
+        </span>
+</div>
+<div class="w-full h-48 rounded-xl overflow-hidden relative shadow-inner">
+<div class="w-full h-full bg-cover bg-center" data-location="Sol Plaatje University Central Library, Kimberley, South Africa" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCR7hvW6HEQGpye7XChM4Fj5iF_m8bM0G8Jpiz3xa8qyvJ7gwMVvVnugHoZ-yXNdWAkbeXU191tKLydkbloo_1gJ44hARPA_lWX5Ze117eeWqo-8K9tZGcl1h0UuzGSZ8WvBMEx-RXbh73PiPavAvrWsrlfGTtxDY2ljyX2DR3RDvNRnr4qh5X5SgyU-UdXP5Ql4Xkab_wz0kaKMXlXyfhuPqZseS8jJTiVMu20vcQbouNHQS1ona7OMw')"></div>
+<div class="absolute bottom-space-md left-space-md bg-surface-container-lowest/95 backdrop-blur-md p-space-sm rounded-lg shadow-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_police</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Central Library Ground Floor Hub</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Operating: 08:00 - 20:00 • Guard Desk Contact: Ext 4110</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Dialog: Propose Swap with My Wardrobe (Triggered via CTA) -->
+  </div>
+
+  <!-- View 3: List an Item Studio (Screen 3) -->
+  <div id="view-wizard" class="view-panel hidden w-full">
+    <div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow -->
+<div class="relative w-full px-space-md py-space-lg lg:px-margin-desktop lg:py-space-xl flex flex-col items-center">
+<!-- Editorial Modal / Studio Frame (Instagram Desktop Creation Architecture) -->
+<div class="w-full max-w-6xl bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col">
+<!-- Studio Header with Wizard Step Indicator -->
+<div class="w-full px-space-lg py-4 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Create New Campus Listing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sol Plaatje University Circular Collective</span>
+</div>
+</div>
+<!-- Stepper Progress Tracker -->
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>1. Media</span>
+</div>
+<div class="w-3 h-0.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>2. Details &amp; Swap</span>
+</div>
+<div class="w-3 h-0.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>3. Safe Zone</span>
+</div>
+</div>
+</div>
+<!-- Main Split Studio Body -->
+<div class="grid grid-cols-1 lg:grid-cols-12 w-full min-h-[700px]">
+<!-- Left Side: Visual Media Studio (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low/60 p-space-lg flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary tracking-wide uppercase">Lookbook Canvas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 of 5 slots loaded</span>
+</div>
+<!-- Main Interactive Preview Frame -->
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container group shadow-sm flex items-center justify-center">
+<img alt="Uploaded Preview Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, minimalist high-fashion editorial flat-lay shot of an emerald green Sol Plaatje University heavyweight hoodie on an off-white stone plinth. Natural Northern Cape daylight, sharp textile weave visible, architectural campus backdrop hints in blurred background." id="primaryDisplayImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPVYYPFNUMYnSzpHP40KCneYan1K2kbUoqqWwSfnzvTGBZd0manY2VI8nkeP4cEFGxN76P2OolK5Z1aJSO_uh-C4RkxMFwUnPk8H32KE5vRwqHDNn46HX1Jac-sCLlUXXJIIj6jhFyq9XK2OWPkkSLtfEN1u6mCjRa9Z4M7_tbeHpS128w_IbhLhQHrCq420rKUWN4ikH-MM-eLXRamZQhkzjnf3xytNGhrvCHjy-p0yYpzqetIsbLrA"/>
+<!-- Floating Media Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">verified</span> Primary Cover
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm">
+                  SPU Verified Tag
+                </span>
+</div>
+<!-- Quick Media Overlay Actions -->
+<div class="absolute bottom-3 right-3 flex items-center gap-2">
+<button aria-label="Crop image" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary hover:bg-surface-container-lowest flex items-center justify-center shadow-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">crop_rotate</span>
+</button>
+<button aria-label="Delete image" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-error hover:bg-surface-container-lowest flex items-center justify-center shadow-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Thumbnail Reel & Drag-Drop Trigger -->
+<div class="grid grid-cols-5 gap-2">
+<button class="relative aspect-square rounded-md overflow-hidden ring-2 ring-secondary transition-all" onclick="swapPreview(0)" type="button">
+<img alt="Front view" class="w-full h-full object-cover" data-alt="Front view of green SPU student varsity hoodie with gold embroidery on white concrete background, soft shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA27q8VFm9p1W68cuefyCeS0MErjA0d-HAR3Nw6vBrngvNKastdVtSrUcyqOXwFcWVhQQIqiMLrwMG1XaWfqVzBTltnqC4DWMmflVZUX4-_jKL8jvJVMBHLJmePhxR9V2VCFLfelEmqpMrNo7oo1T0hUY2xChWQ9GzBExpuWxrm6jOV9x_j82b_qLy7sAuNmRKNxU4NscAFFJEFWvSYPmfRin5OfMEwXnt6zJKWXmN3yiW6K-IrhY7Haw"/>
+</button>
+<button class="relative aspect-square rounded-md overflow-hidden bg-surface-container hover:opacity-90 transition-all opacity-80" onclick="swapPreview(1)" type="button">
+<img alt="Back view" class="w-full h-full object-cover" data-alt="Back aesthetic view of university sweatshirt with printed circular typography against architectural concrete." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ-Du7Lo6KHSARpIesugpVvxfMuLsrEKAncck0zlirTD4EimQBfbSgp37bVeWKyyzmuIa5PraF9pKTuuEILNMjCchO1mzPGEuBtHTP0oUdaX9XonBC_Lq_8Ly96RjKe3GdbcikcHubdAh46nlDOzDNoSX033B4eV2PCK7kmEBSZGcljm2Zd9yjDql1qhNv5zU4lWb2X40KTjniL7E7Vb2jGMt6pjKVEyLCkX5SBVqZTdertWWPOtpDOg"/>
+</button>
+<button class="relative aspect-square rounded-md overflow-hidden bg-surface-container hover:opacity-90 transition-all opacity-80" onclick="swapPreview(2)" type="button">
+<img alt="Care tag" class="w-full h-full object-cover" data-alt="Extreme macro close-up of SPU authentic garment inner tag and organic cotton woven texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPZAKx8dmVvTkw1fcQaWc3Yu0LmJqC6nlrJVjcWFcXClq9bo1wbxG3J299omHDmYjKOCJsAEmivV8ldh9ojSkJAosptmSPiRGt1V2-jhuLQ5wDTT7tWhpBUemkJSas2sAte9ljJQbaNavLvEVWlSb1irYOvGVSlEftoXIBCuKw6f8IXVEN0gwdXnaBdix9qDTHwUpA6XIyiiSpYjJcE-9V_8lVcRmOrFf78me8zTnb4CKATl19EgOowA"/>
+</button>
+<button class="relative aspect-square rounded-md overflow-hidden bg-surface-container hover:opacity-90 transition-all opacity-80" onclick="swapPreview(3)" type="button">
+<img alt="Fit check" class="w-full h-full object-cover" data-alt="Model worn fit check of collegiate jacket against sunlit Kimberly red clay building facade." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNTz7jQX-A_gmK4FSHOsfPnyxNmk3WdGOICpCWq9pbPr8lAjTGoDwZRJDakEQhxogK4PlZzR0Rz7R9aUZ1hhEDrAEmZJZjzSf5_dDhlzVKe2r9Wqo3IXABTTDt1Ba3c58MJDyRfCZzTBqdpSPu8s_qfKJF8fkTTBe-jyyKNkIFHKaUcpS-qB5EbajpQklZKRi7ERckaYnOya_Dd6xOwDpTt3dIn3i31RAwoCShuYl02jWHlMcaHxYR7A"/>
+</button>
+<!-- Empty Upload Slot -->
+<div class="aspect-square rounded-md bg-surface-container-high/60 hover:bg-surface-container-highest flex flex-col items-center justify-center text-on-surface-variant cursor-pointer transition-colors p-1 text-center">
+<span class="material-symbols-outlined text-[20px] text-secondary">add_photo_alternate</span>
+<span class="font-label-sm text-[10px] leading-tight mt-0.5">Add Slot</span>
+</div>
+</div>
+<!-- Drag & Drop Dropzone Box -->
+<div class="w-full p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors cursor-pointer flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">cloud_upload</span>
+<p class="font-label-md text-label-md text-on-surface">Drag up to 5 photos or browse from device</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">JPG, PNG, HEIC up to 15MB each</p>
+</div>
+</div>
+<!-- Editorial Photography Tips Card -->
+<div class="p-3.5 rounded-lg bg-surface-container-lowest flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">tips_and_updates</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Pro Campus Curator Tip</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Natural Kimberley morning sunlight and showing verified SPU faculty tags increases swap acceptance by <strong class="text-primary font-bold">3.4x</strong>!</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Listing Details & Preferences Form (7 cols) -->
+<div class="lg:col-span-7 p-space-lg lg:p-space-xl flex flex-col justify-between overflow-y-auto">
+<form class="flex flex-col gap-6" onsubmit="event.preventDefault();">
+<!-- Section 1: Item Core Metadata -->
+<div class="flex flex-col gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="itemTitle">Item Title</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low px-3.5 py-2.5 rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container transition-all" id="itemTitle" placeholder="e.g. SPU Faculty Hoodie, Vintage Levi's 501" type="text" value="SPU Humanities Embroidered Vintage Hoodie"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant">42/80</span>
+</div>
+</div>
+<!-- Category & Department -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="categorySelect">Wardrobe Category</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low px-3.5 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container pr-9" id="categorySelect">
+<option selected="">Outerwear &amp; Hoodies</option>
+<option>Tops &amp; Tees</option>
+<option>Denim &amp; Trousers</option>
+<option>Formal &amp; Graduation Attire</option>
+<option>Campus Footwear</option>
+<option>Bags, Backpacks &amp; Accessories</option>
+<option>Course Kits &amp; Academic Books</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Garment Condition</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low px-3.5 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container pr-9">
+<option>Brand New with Tags (Unworn)</option>
+<option selected="">Like New (Worn once or twice)</option>
+<option>Good (Minor pre-loved wear)</option>
+<option>Fair (Free campus donation only)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Size Selector Pills -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">Size Standard</span>
+<div class="flex flex-wrap items-center gap-2" id="sizePills">
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="selectSize(this)" type="button">XS</button>
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="selectSize(this)" type="button">S</button>
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-secondary text-on-secondary font-bold shadow-sm" onclick="selectSize(this)" type="button">M</button>
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="selectSize(this)" type="button">L</button>
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="selectSize(this)" type="button">XL</button>
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="selectSize(this)" type="button">XXL</button>
+<button class="px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="selectSize(this)" type="button">One Size</button>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Section 2: Listing Exchange Model -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-on-surface">Exchange Mode</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<!-- Option 1: Direct Swap (Active Default) -->
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="listingType" onchange="toggleListingType('swap')" type="radio" value="swap"/>
+<div class="p-3 rounded-lg bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-md text-label-md font-bold mt-1">Direct Swap</span>
+<span class="font-body-sm text-body-sm opacity-80">Trade for wishlist attire</span>
+</div>
+</label>
+<!-- Option 2: 100% Free Donation -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="listingType" onchange="toggleListingType('donation')" type="radio" value="donation"/>
+<div class="p-3 rounded-lg bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+</div>
+<span class="font-label-md text-label-md font-bold mt-1">100% Free Gift</span>
+<span class="font-body-sm text-body-sm opacity-80">Campus circular solidarity</span>
+</div>
+</label>
+<!-- Option 3: Student Sale -->
+<label class="cursor-pointer">
+<input class="peer sr-only" name="listingType" onchange="toggleListingType('cash')" type="radio" value="cash"/>
+<div class="p-3 rounded-lg bg-surface-container-low peer-checked:bg-secondary-container peer-checked:text-on-secondary-container flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<span class="font-label-md text-label-md font-bold mt-1">Student Bargain</span>
+<span class="font-body-sm text-body-sm opacity-80">Peer direct ZAR cash</span>
+</div>
+</label>
+</div>
+<!-- Context-specific Wishlist Textarea / Cash Input -->
+<div class="flex flex-col gap-1 mt-1" id="swapPreferencesContainer">
+<label class="block font-label-md text-label-md text-on-surface" for="wishlistInput">What will you swap for?</label>
+<textarea class="w-full bg-surface-container-low px-3.5 py-2 rounded-lg font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container" id="wishlistInput" placeholder="e.g. Willing to trade for an SPU Sports Tracksuit (Size S/M), vintage corduroy jacket, or winter scarves." rows="2"></textarea>
+</div>
+<div class="hidden flex-col gap-1 mt-1" id="cashInputContainer">
+<label class="block font-label-md text-label-md text-on-surface" for="cashPrice">Student Bargain Price (ZAR)</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-label-md text-label-md text-primary font-bold">R</span>
+<input class="w-full pl-8 pr-3.5 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container" id="cashPrice" placeholder="150" type="number"/>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Section 3: SPU Safe Exchange Meetup Zone Selection -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+<span class="font-label-md text-label-md text-primary font-bold">SPU Certified Safe Exchange Zones</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded-full">Campus Protection Verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select designated safe hubs monitored by campus officers for peace of mind:</p>
+<div class="flex flex-col gap-2">
+<!-- Safe Spot 1 -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Central Library Ground Floor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active 08:00 - 20:00 • CCTV &amp; Security Desk Hub</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary">local_police</span>
+</label>
+<!-- Safe Spot 2 -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Luka Jantjie Security Wing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SPU South Campus main courtyard foyer</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary">local_police</span>
+</label>
+<!-- Safe Spot 3 -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Moroka Residence Front Desk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Student accommodation safe counter checkpoint</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline">verified_user</span>
+</label>
+</div>
+</div>
+<!-- Eco-Impact Dynamic Preview Widget -->
+<div class="p-4 rounded-xl bg-gradient-to-r from-secondary-container to-surface-container flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">SPU Circular Impact Metric</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Listing this hoodie diverts <strong class="text-primary font-bold">~1.2 kg</strong> of textile waste &amp; saves <strong class="text-primary font-bold">2,700 L</strong> of water.</span>
+</div>
+</div>
+<div class="hidden sm:flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">+25 pts</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Eco Badge Level</span>
+</div>
+</div>
+<!-- Action Buttons Footer -->
+<div class="flex items-center justify-between pt-2">
+<button class="px-5 py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+<span>Save as Draft</span>
+</button>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+                  Cancel
+                </button>
+<button class="px-6 py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg transition-colors flex items-center gap-2 shadow-md hover:shadow-lg" type="submit">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Publish Listing to Marketplace</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Supplementary Campus Safety Advisory Sub-Panel -->
+<div class="w-full max-w-6xl mt-4 px-4 py-3 rounded-lg bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">gavel</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">By listing, you uphold the <strong class="text-on-surface font-semibold">SPU Student Circular Code of Conduct</strong>. Only legitimate Sol Plaatje community members may arrange pickups.</span>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:underline shrink-0" href="#">Read Safe Exchange Terms</a>
+</div>
+</div>
+</div>
+<script>
+  function swapPreview(index) {
+    const mainImg = document.getElementById('primaryDisplayImage');
+    const prompts = [
+      "A clean, minimalist high-fashion editorial flat-lay shot of an emerald green Sol Plaatje University heavyweight hoodie on an off-white stone plinth. Natural Northern Cape daylight, sharp textile weave visible, architectural campus backdrop hints.",
+      "Back view of Sol Plaatje university student sweatshirt with clean typography against Kimberley modern concrete architecture wall.",
+      "Extreme macro close-up of authentic SPU collegiate embroidered tag and stitching details, high editorial quality.",
+      "Lifestyle fit-check shot of university student styled in oversized vintage green hoodie in Kimberley university courtyard."
+    ];
+    if (prompts[index]) {
+      mainImg.setAttribute('data-alt', prompts[index]);
+    }
+  }
+
+  function selectSize(btn) {
+    const container = document.getElementById('sizePills');
+    const buttons = container.querySelectorAll('button');
+    buttons.forEach(b => {
+      b.className = 'px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors';
+    });
+    btn.className = 'px-3.5 py-1.5 rounded-md font-label-md text-label-md bg-secondary text-on-secondary font-bold shadow-sm';
+  }
+
+  function toggleListingType(type) {
+    const swapContainer = document.getElementById('swapPreferencesContainer');
+    const cashContainer = document.getElementById('cashInputContainer');
+    if (type === 'swap') {
+      swapContainer.classList.remove('hidden');
+      cashContainer.classList.add('hidden');
+    } else if (type === 'cash') {
+      swapContainer.classList.add('hidden');
+      cashContainer.classList.remove('hidden');
+    } else {
+      swapContainer.classList.add('hidden');
+      cashContainer.classList.add('hidden');
+    }
+  }
+</script>
+  </div>
+
+  <!-- View 4: Student Profile & Eco Impact (Screen 2) -->
+  <div id="view-profile" class="view-panel hidden w-full">
+    <div class="flex flex-col w-full">
+<div class="max-w-6xl mx-auto w-full px-6 py-8 flex flex-col gap-10">
+<!-- Header: Editorial & Social Instagram-Style Profile -->
+<header class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-14 bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-sm">
+<!-- Profile Picture with Story Ring & SPU Check -->
+<div class="relative shrink-0 self-center md:self-start">
+<div class="w-36 h-36 md:w-44 md:h-44 rounded-full p-1 bg-gradient-to-tr from-secondary via-secondary-container to-primary flex items-center justify-center shadow-md">
+<div class="w-full h-full bg-surface-container-lowest p-1 rounded-full">
+<img alt="Thabiso profile picture" class="w-full h-full object-cover rounded-full shadow-inner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhP8fGjjqa_GoT6lMe1BvxVgGRgyU2XVH_g2I1vIPUHsyAfnFZIVNRF7FjH9Bdo6UBbMQobOBekQzup2pC6snWuMZbiIa03wRVB07oqQCHxzefF0LmyQ6N5xiKL1pve1qjeYX9FbXQpwnnHmwXJ9vtCI1-bx3qe3oI8kF9UNMoYJrbKmORh9NorRQUJKO46xxNS4DtoGjne6gXjy_oH2fppf86v0kAru0O7aTtIr1lP8w09QO5No-KA"/>
+</div>
+</div>
+<div class="absolute bottom-2 right-2 bg-primary text-on-primary rounded-full p-1.5 shadow-md flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<!-- Profile Information -->
+<div class="flex flex-col flex-1 gap-5 w-full">
+<!-- Top Row: Username, Tag, and Action CTAs -->
+<div class="flex flex-wrap items-center gap-3 md:gap-4">
+<h1 class="font-headline-lg text-headline-lg text-on-surface flex items-center gap-2 tracking-tight">
+            thabiso.spu
+          </h1>
+<span class="bg-secondary-container/80 text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wide">
+            Faculty of Humanities
+          </span>
+<div class="flex items-center gap-2 ml-auto flex-wrap">
+<button class="flex items-center gap-1.5 px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              Edit Profile
+            </button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors" id="spuPassBtn" onclick="openSpuPassModal()">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+              SPU Pass
+            </button>
+<button class="w-10 h-10 flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<button class="flex items-center gap-1.5 px-5 py-2 bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+              New Listing
+            </button>
+</div>
+</div>
+<!-- Metrics & Trust Metrics -->
+<div class="flex flex-wrap items-center gap-6 md:gap-8 py-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">15</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Swaps Completed</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">6</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Active Listings</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">98%</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Campus Trust</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-outline text-[16px]">badge</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SPU-2023-8942</span>
+</div>
+</div>
+<!-- Bio Description -->
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Thabiso M.</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> Off-Campus Res
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            🌿 Circular fashion advocate at Sol Plaatje Univ. Swapping oversized collegiate knitwear, vintage denim &amp; graphic tees.
+          </p>
+<div class="flex items-center gap-2 pt-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md text-label-md">Meeting only at Central Library Safe Zone &amp; Luka Jantjie Hall</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Eco-Impact Story Highlights Row -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h2 class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">eco</span>
+          Verified Campus Eco Footprint
+        </h2>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Live SPU Carbon Registry</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+<!-- Highlight 1: Garments -->
+<div class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer shadow-sm text-center group">
+<div class="w-14 h-14 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">styler</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">25 Items</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Garments Diverted</span>
+</div>
+<!-- Highlight 2: CO2 Prevented -->
+<div class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer shadow-sm text-center group">
+<div class="w-14 h-14 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">cloud_done</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">18.0 kg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">CO₂ Prevented</span>
+</div>
+<!-- Highlight 3: Water Conserved -->
+<div class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer shadow-sm text-center group">
+<div class="w-14 h-14 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">water_drop</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">6,000 L</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Water Conserved</span>
+</div>
+<!-- Highlight 4: Student Savings -->
+<div class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer shadow-sm text-center group">
+<div class="w-14 h-14 rounded-full bg-secondary-container/50 flex items-center justify-center text-primary mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">savings</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">R 750</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Money Saved</span>
+</div>
+<!-- Highlight 5: Campus Award -->
+<div class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer shadow-sm text-center group col-span-2 sm:col-span-1">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">military_tech</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Top 5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Eco Advocate</span>
+</div>
+</div>
+</section>
+<!-- Tab Bar: Instagram Style Tabs -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-center gap-2 sm:gap-12 bg-surface-container-lowest py-3 px-6 rounded-xl shadow-sm">
+<button class="profile-tab active flex items-center gap-2 py-2 px-4 rounded-lg font-label-lg text-label-lg transition-colors bg-secondary-container text-on-secondary-container font-semibold" data-target="active-listings">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+<span>Listings (6)</span>
+</button>
+<button class="profile-tab flex items-center gap-2 py-2 px-4 rounded-lg font-label-lg text-label-lg transition-colors text-on-surface-variant hover:bg-surface-container-low" data-target="saved-wishlist">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+<span>Wishlist (12)</span>
+</button>
+<button class="profile-tab flex items-center gap-2 py-2 px-4 rounded-lg font-label-lg text-label-lg transition-colors text-on-surface-variant hover:bg-surface-container-low" data-target="completed-swaps">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+<span>Completed (15)</span>
+</button>
+<button class="profile-tab flex items-center gap-2 py-2 px-4 rounded-lg font-label-lg text-label-lg transition-colors text-on-surface-variant hover:bg-surface-container-low" data-target="eco-badges">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+<span>Badges</span>
+</button>
+</div>
+<!-- Tab View 1: Active Listings (3-Column Editorial Grid) -->
+<div class="tab-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="active-listings">
+<!-- Item 1: Vintage Denim Jacket -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vintage blue washed denim trucker jacket hanging in an aesthetic campus dorm room, crisp sunlight, clean collegiate editorial styling, high detail fabric texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL8ZgfUH0jBIBdGa03tqXYfYjxiu0QIQZYbYfEqphhqL1zH6_lGSWTfUcH_MIeHBrztDgoiCgiNNmUk61mI_caeeUJT_Vm_aDubw6qvpVQdghf3MB_icugfZTYZAd7_myhIfrWPa-CyPJ8IDc_pbaZ-gUFFLIeg4jm-K1LPgBNW_bsVQf4E3d3yEdhYqm1jhpjmEzzhrhFXSNfincZAojkIFXaiMvN2B30KHOdfhZljjSKfYZLV2ugYw"/>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-on-primary">
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>28</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span>4 offers</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-primary font-label-sm text-label-sm">
+              Size M
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-sm text-label-sm">
+              Swap or R180
+            </div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Washed Vintage Denim Jacket
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+              Saved ~2,400 L Water
+            </p>
+</div>
+</article>
+<!-- Item 2: Corduroy Pants -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Forest green ribbed corduroy trousers laid flat on wooden floor with warm studio lighting, minimalist editorial presentation, student fashion boutique." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcUr1VFy5lSGJC2XyZLf2q3MVlOv-98TxK4LCFG3XUUsCG50mtZPKMbzhg8Mo-zl-AMoWs9ZH__K8eDdQ6MvpNhWxjCYL-sDL4P9e6ZZ-pKjKI3-r0tOFeJYWbHP_ZDuQQZgZslLqvIQAcko7r-m8tbyHE3xUD_nArYD4ptqBlUotet0SqYJC0aE6NN4xJn_OU4p0Hx_iy4ZpJvGS_2SzUZ7GEhuhjCFFkaEjYs84Tgl8PaQsxbOp_sw"/>
+<div class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-on-primary">
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>19</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span>2 offers</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-primary font-label-sm text-label-sm">
+              Size 32
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-sm text-label-sm">
+              Swap Only
+            </div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Wide-Leg Emerald Corduroy Pants
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+              Saved ~1,800 L Water
+            </p>
+</div>
+</article>
+<!-- Item 3: Oversized Hoodie -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Oversized sage green heavyweight cotton collegiate hoodie draped gracefully on a minimalist mannequin, softly lit academic backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPtmtT7H6MvKX9ZGeD8e19JAxO0PNU6sL0c48Xo0mB5klTa6xN75rnC3DY0CDN6H8qHMkYoU8VE0yZ2q6VXvCXHZVdvQSDMRbPQc6AXX5qn4iUN3rtvg0Z2MZcgg97pMsOu_p36sb_dLiA8GKm48ERtU_OObMoNSGi0xAXmAa79WE7b04fY6-WcdaIBt2a-KNeHIwaA6S463DQOdBqu-LX2fsM-vrCfdnJE8FbHm_XBUXj7MeIYCQiKA"/>
+<div class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-on-primary">
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>44</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span>7 offers</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-primary font-label-sm text-label-sm">
+              Size L
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-sm text-label-sm">
+              Swap or R120
+            </div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Heavyweight Sage Green Hoodie
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+              Saved ~2.4 kg CO₂
+            </p>
+</div>
+</article>
+<!-- Item 4: Campus Tote Bag -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Natural canvas heavy-duty tote bag featuring minimalist botanical typography art, styled with university books and reusable tumbler." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE4d3qYoYwE_gaOnBTJgEFMy_vipPjYyNJTH7dl7rN9fcIq46-UPxBAAkRA5uvBG9a6tUjHa3dOAEbwHKMOFRohL69WHOHdqa3pja_l_Ij7D9DlRajaQ0t2MrIZMIeQAWASD6NhwRqPGu_AMDL--8VViwwbHe7YooUCgBjLjSM2kZZ261BoszMIr4AbTfZs60xNZvc7a7YSmunfl6c4sbPtKIO7MDaHvUO__3KBU0sU5FEYYhQeu4ktw"/>
+<div class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-on-primary">
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>15</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span>1 offer</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-primary font-label-sm text-label-sm">
+              One Size
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-sm text-label-sm">
+              Swap or R60
+            </div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Botanical Canvas Study Tote
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+              Zero-waste textile
+            </p>
+</div>
+</article>
+<!-- Item 5: Graduation Sash -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Formal university silk ceremonial graduation sash neatly pressed, golden yellow and emerald green embroidery, clean crisp presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPL6C6epR0uBwTBdSuIW9MP718HXVdXjSBrw3EVZDtefdBIUEMrexn0QLl9qDSRvBjtouOpQmMoljHZjEN0YPZzn8LSl5Y4NRebN_vzzZF3cHNb1nOdahEz-nNMx0UdfKaNmTONkWf0h_Sw6JCxFwRSIrV4pWgFYR47I729D5pE3QcDbMEC8XCywzB4L58TAxr2jeArMgtq_SmL4Gat8Cmg0oqNe_oe2916V0UtcaGVZMi5xGCUQ9cqA"/>
+<div class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-on-primary">
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>31</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span>5 offers</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-primary font-label-sm text-label-sm">
+              Humanities
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-sm text-label-sm">
+              Rental / Swap
+            </div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Official Humanities Faculty Sash
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+              Shared graduation cycle
+            </p>
+</div>
+</article>
+<!-- Item 6: Chelsea Boots -->
+<article class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic black leather chelsea boots with clean soles, styled in studio setting on off-white pedestal, soft directional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgLTsFctS35c3G6r60pjEezvsghQV1BNl6gsf9NGWNMopK0Dqn9546vtts70X0-zkWeZ8sOliebr8DKhjQCEyS8oFy5NSdKTFx3Ky4MeMEKtb0bzQN6TCnUS-RkbIJqyQK34JF4ONqrQdDE74YRcqHXPPJwxygUK7j6LMAHq7Iua6_gMIspWLZ5SZUYwto0unpFYUSUM8DhFe6MDihAG6nrTt3br2RF_Ha-sDCA2gQ_FREjkr0SJ5x7g"/>
+<div class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-on-primary">
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>52</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">sync_alt</span>
+<span>8 offers</span>
+</div>
+</div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded text-primary font-label-sm text-label-sm">
+              UK 7 / EU 40
+            </div>
+<div class="absolute top-3 right-3 bg-secondary text-on-secondary px-2.5 py-1 rounded font-label-sm text-label-sm">
+              Swap or R250
+            </div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Classic Leather Chelsea Boots
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+              Circulated footwear
+            </p>
+</div>
+</article>
+</div>
+<!-- Tab View 2: Saved / Wishlist (Hidden by Default) -->
+<div class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="saved-wishlist">
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col p-4">
+<div class="aspect-[4/5] bg-surface-container rounded-lg overflow-hidden relative mb-3">
+<img class="w-full h-full object-cover" data-alt="Chunky cream knit fisherman sweater resting on a wooden chair in soft natural window lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH4dP9FfOFVHX-EoCN8DzuEL6RDGKbjM1gXwF922ckV5L35-LxT8_SGTq1FgVo3yMznmjWA2ERQkJgvnS5eE1UZVJEZVgaThbE1IQvOLzlq-ZDhY0yesGL-kTK48kHx-vHDxkmlde18bn4P-632D88tuMKyVwXIsQQ662Wo9vOofzRWGL2Nqc-tyKcEBI4rzJTEI4HOpoS4Qe9abFS6mNoCeEPIy_MDH_62BJlePNPBknkYjXWZnTFLw"/>
+<span class="absolute top-2 right-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded">R140</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Chunky Cable Knit Sweater</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lister: @amogelang.res</p>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col p-4">
+<div class="aspect-[4/5] bg-surface-container rounded-lg overflow-hidden relative mb-3">
+<img class="w-full h-full object-cover" data-alt="Classic canvas high top sneakers in olive drab green placed on a clean grey pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSkc9_AgMoJJCqlPGcz6hRIZZajBApBNgyIao72_X5a7CFWmuoh8ChrJdT3OV2JrVp7kckml2jlphP7J_24hIiwvfXAwmBhrrBidPijvVrkhOp2gXQcrJVrZy6i3CZ-i96Ho_f0JTDExP8IgFi8EQljeoZ5kANclusEMHZ-TkWgWmdZW2fjPjrc1NFxwVuNm5ZnCKjw3GrFCR9b2MtDtzXlBnXBY_wCL2LoRDn_76-N9RugSP9-_PDEg"/>
+<span class="absolute top-2 right-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded">Swap</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Olive Canvas High Tops</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lister: @kabelo_spu</p>
+</article>
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col p-4">
+<div class="aspect-[4/5] bg-surface-container rounded-lg overflow-hidden relative mb-3">
+<img class="w-full h-full object-cover" data-alt="Minimalist brass watch with deep green leather strap on editorial surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFolu0ffrFgIaGVrPDMgf4_vEA_MzW66a7C75_6qtbKDuee8FgjJ_KEjVXzHhuUGDEcRlO3vdAGMlbYd0_r6Nf52Wd_SZXSrHsuFRW31li2x5vs1_hW8sOW2br3s6xF6J5xw8xJ_z_AYNFUoLhtwcowINeEu65WRr5U0-wJHt1xjWMqmnK7h783NAN9QmZpLrC4da_7rxwWYWOliBkB8IkpMuzvXYhaJzXJMO8szOr8WRoOnUnZ3gmBQ"/>
+<span class="absolute top-2 right-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded">Swap or R190</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Minimalist Forest Watch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lister: @nomsa.law</p>
+</article>
+</div>
+<!-- Tab View 3: Completed Swaps (Hidden by Default) -->
+<div class="tab-content hidden flex flex-col gap-4" id="completed-swaps">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm">
+<span class="material-symbols-outlined">swap_calls</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Swapped: Varsity Corduroy Bomber ⇄ Wool Overcoat</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">With @lerato_m • Central Library Safe Zone • 3 days ago</span>
+</div>
+</div>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm font-semibold">
+            Verified &amp; Completed
+          </span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm">
+<span class="material-symbols-outlined">swap_calls</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Swapped: Graphic Art Hoodie ⇄ Denim Workwear Vest</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">With @sihle_k • Luka Jantjie Safe Zone • 1 week ago</span>
+</div>
+</div>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-sm text-label-sm font-semibold">
+            Verified &amp; Completed
+          </span>
+</div>
+</div>
+<!-- Tab View 4: Eco Badges & Certificates (Hidden by Default) -->
+<div class="tab-content hidden grid grid-cols-1 md:grid-cols-3 gap-6" id="eco-badges">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col items-center text-center gap-3">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">format_image_left</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Zero Waste Pioneer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Awarded for diverting over 20 textile garments from Sol Plaatje municipal landfills.</p>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">SPU Sustainability Board Certified</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col items-center text-center gap-3">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">water</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Aquifer Guardian</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conserved 5,000+ liters of water through second-hand circular denim recirculations.</p>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">Verified May 2024</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col items-center text-center gap-3">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Safe Exchange Vanguard</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completed 15 transactions exclusively within SPU Monitored Safe Zones without disputes.</p>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">Campus Safety Network</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SPU Pass Modal Dialog (Interactive Micro-Interaction) -->
+  </div>
+
+  <!-- View 5: Swaps & Messages / Direct Chat -->
+  
+<div id="view-chat" class="view-panel hidden w-full px-space-md lg:px-margin-desktop py-space-lg">
+  <div class="w-full bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/30 overflow-hidden flex flex-col md:flex-row min-h-[750px]">
+    <!-- Left: Conversation Threads List (320px) -->
+    <div class="w-full md:w-80 border-r border-outline-variant/20 flex flex-col bg-surface-container-lowest">
+      <div class="p-4 border-b border-outline-variant/20 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[22px]">forum</span>
+          <h2 class="font-headline-sm text-headline-sm text-primary">Campus Chats</h2>
+        </div>
+        <span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Live Guarded</span>
+      </div>
+      <!-- Thread Search -->
+      <div class="p-3 border-b border-outline-variant/20">
+        <div class="relative">
+          <span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+          <input type="text" placeholder="Filter conversations..." class="w-full pl-9 pr-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container" id="threadSearchInput" onkeyup="filterChatThreads()"/>
+        </div>
+      </div>
+      <!-- Threads List -->
+      <div id="chatThreadsList" class="flex-1 overflow-y-auto divide-y divide-outline-variant/10">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+
+    <!-- Right: Active Chat Conversation -->
+    <div class="flex-1 flex flex-col bg-surface-container-lowest">
+      <!-- Active Partner Header -->
+      <div class="p-4 border-b border-outline-variant/20 flex items-center justify-between bg-surface-container-low/50">
+        <div class="flex items-center gap-3">
+          <img id="activeChatAvatar" class="w-10 h-10 rounded-full object-cover border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFLfU6gbqtmb2gHg6YSSefS0OIf-ocm3bEvZ5OJD1WJ4OnS0" alt="Avatar"/>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span id="activeChatPartnerName" class="font-label-lg text-label-lg text-on-surface font-bold">Kabelo M.</span>
+              <span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+              <span class="font-label-sm text-label-sm px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-semibold">99% Trust</span>
+            </div>
+            <p id="activeChatMeta" class="font-body-sm text-body-sm text-on-surface-variant">Sol Plaatje University • Central Library Safe Zone</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="navigateTo('safezones')" class="px-3 py-1.5 rounded-lg border border-outline-variant/40 hover:bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 transition">
+            <span class="material-symbols-outlined text-secondary text-[16px]">shield</span> Safe Zone Protocols
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Listing Context Bar -->
+      <div id="chatListingBanner" class="px-4 py-3 bg-secondary-container/20 border-b border-outline-variant/20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img id="chatListingThumb" class="w-12 h-12 rounded-lg object-cover border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Igp2wTwgYyF6_e5AM7LuwMgXvK6plkaTdhVzIpG-uz567Tq4h1JdEQ0vzk61NkAom4FEyT-UQj-5k3mVGll1ry-flVA3TFUQw4ebXc5vspe4QUSXIPOpGHNACUPf3uWUgvDjIzmE4s9xU2z3NwfoeHYD4JzUBH-w1jhk3djM0hXW0QXF4nryzgAd6XYjoHKnCDhndvbVIKMrwAxfHBaw-Km40TX13ZL_UUPxoabi9pBrnKuUevO2DQ" alt="Listing"/>
+          <div>
+            <h4 id="chatListingTitle" class="font-label-md text-label-md text-on-surface font-bold">Retro 1990s SPU Colorblock Windbreaker</h4>
+            <span id="chatListingBadge" class="font-label-sm text-label-sm text-secondary font-semibold">Direct Item Swap (Size M Hoodie)</span>
+          </div>
+        </div>
+        <button onclick="openDemoDetail(1)" class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition">
+          View Specs
+        </button>
+      </div>
+
+      <!-- Messages Stream -->
+      <div id="chatMessageStream" class="flex-1 p-6 overflow-y-auto flex flex-col gap-4 bg-background">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Chat Input Footer -->
+      <div class="p-4 border-t border-outline-variant/20 bg-surface-container-lowest">
+        <!-- Quick Prompts -->
+        <div class="flex items-center gap-2 mb-3 overflow-x-auto pb-1 scrollbar-none">
+          <button onclick="insertQuickChat('Hi! Is this still available for swap?')" class="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap transition cursor-pointer">
+            "Is this available?"
+          </button>
+          <button onclick="insertQuickChat('Can we meet at Central Library Ground Floor tomorrow?')" class="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap transition cursor-pointer">
+            "Meet at Central Library?"
+          </button>
+          <button onclick="insertQuickChat('I have an item in my wardrobe you might like to trade for.')" class="px-2.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap transition cursor-pointer">
+            "I have a trade offer"
+          </button>
+        </div>
+        <form id="chatMessageForm" onsubmit="handleSendMessage(event)" class="flex items-center gap-2">
+          <input type="text" id="chatInput" placeholder="Type a secure message to seller..." class="flex-1 bg-surface-container-low text-on-surface font-body-md text-body-md px-4 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container placeholder:text-on-surface-variant" autocomplete="off"/>
+          <button type="submit" class="px-5 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 transition cursor-pointer">
+            <span>Send</span>
+            <span class="material-symbols-outlined text-[18px]">send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- View 6: Monitored Campus Safe Zones -->
+  
+<div id="view-safezones" class="view-panel hidden w-full px-space-md lg:px-margin-desktop py-space-lg">
+  <div class="max-w-6xl mx-auto flex flex-col gap-space-lg">
+    <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-outline-variant/30">
+      <div class="flex items-center gap-4">
+        <div class="w-16 h-16 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+          <span class="material-symbols-outlined text-[32px] text-secondary">verified_user</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-headline-lg text-headline-lg text-primary font-bold">Monitored Campus Safe Zones</h1>
+            <span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">
+              <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Active Protection
+            </span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Sol Plaatje University designated peer exchange hubs. All handovers are physically supervised by campus security personnel with HD CCTV coverage.
+          </p>
+        </div>
+      </div>
+      <button onclick="navigateTo('feed')" class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition shrink-0 cursor-pointer">
+        Back to Marketplace
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-4">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold">Primary Hub</span>
+            <span class="text-secondary material-symbols-outlined text-[20px]">videocam</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Central Library Ground Floor</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Main entrance security reception desk. Active Mon-Sun 08:00 - 20:00. Equipped with student ID card scanners, test fitting cubicles, and direct protection officer presence.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+          <span>Guard Desk: Ext 4110</span>
+          <span class="text-secondary font-semibold">CCTV Monitored</span>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-4">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-bold">South Campus</span>
+            <span class="text-secondary material-symbols-outlined text-[20px]">security</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Luka Jantjie Security Wing</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            South Campus main courtyard foyer. Guard checkpoint station with 24/7 student escort services, well-lit pedestrian corridors, and parcel inspection tables.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+          <span>Guard Desk: Ext 4205</span>
+          <span class="text-secondary font-semibold">24/7 Active</span>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm border border-outline-variant/30 flex flex-col justify-between gap-4">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-bold">Residence Checkpoint</span>
+            <span class="text-secondary material-symbols-outlined text-[20px]">apartment</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Moroka Residence Front Desk</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Student residence main turnstile checkpoint. Ideal for evening swaps among residential students. Access monitored by res protection officers.
+          </p>
+        </div>
+        <div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+          <span>Turnstile: Ext 4318</span>
+          <span class="text-secondary font-semibold">Keycard Verified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<!-- Modals -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="spuPassModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-sm w-full p-6 shadow-xl flex flex-col items-center gap-5 relative animate-in fade-in duration-200">
+<button class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full" id="closePassBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">SPU Verified Student Pass</span>
+</div>
+<!-- QR Representation -->
+<div class="p-4 bg-surface-container-low rounded-xl flex flex-col items-center gap-3 w-full">
+<div class="w-48 h-48 bg-surface-container-lowest p-3 rounded-lg shadow-sm flex items-center justify-center">
+<!-- Inline Crisp Minimalist QR Code SVG -->
+<svg class="w-full h-full text-primary fill-current" viewbox="0 0 100 100">
+<rect height="30" rx="2" width="30" x="0" y="0"></rect>
+<rect fill="white" height="18" width="18" x="6" y="6"></rect>
+<rect height="10" width="10" x="10" y="10"></rect>
+<rect height="30" rx="2" width="30" x="70" y="0"></rect>
+<rect fill="white" height="18" width="18" x="76" y="6"></rect>
+<rect height="10" width="10" x="80" y="10"></rect>
+<rect height="30" rx="2" width="30" x="0" y="70"></rect>
+<rect fill="white" height="18" width="18" x="6" y="76"></rect>
+<rect height="10" width="10" x="10" y="80"></rect>
+<rect height="18" width="6" x="36" y="6"></rect>
+<rect height="6" width="12" x="48" y="12"></rect>
+<rect height="20" rx="2" width="20" x="40" y="36"></rect>
+<rect fill="white" height="12" width="12" x="44" y="40"></rect>
+<rect height="4" width="4" x="48" y="44"></rect>
+<rect height="6" width="16" x="12" y="40"></rect>
+<rect height="8" width="24" x="68" y="40"></rect>
+<rect height="12" width="12" x="72" y="56"></rect>
+<rect height="24" width="8" x="36" y="68"></rect>
+<rect height="6" width="18" x="52" y="76"></rect>
+<rect height="14" width="14" x="80" y="80"></rect>
+</svg>
+</div>
+<div class="text-center">
+<p class="font-headline-sm text-headline-sm text-on-surface">Thabiso M.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ID: SPU-2023-8942 • Off-Campus</p>
+</div>
+</div>
+<div class="w-full flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Officer Scan Ready
+        </span>
+<span class="font-mono text-primary font-bold">EXPIRES 12/2025</span>
+</div>
+</div>
+</div>
+<!-- Interactive Tabs and Modal Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Tab Switching
+      const tabs = document.querySelectorAll('.profile-tab');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.getAttribute('data-target');
+
+          // Reset tabs
+          tabs.forEach(t => {
+            t.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+            t.classList.add('text-on-surface-variant');
+          });
+
+          // Activate tab
+          tab.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+          tab.classList.remove('text-on-surface-variant');
+
+          // Show targeted content
+          contents.forEach(c => {
+            if (c.id === targetId) {
+              c.classList.remove('hidden');
+            } else {
+              c.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // SPU Pass Modal Logic
+      const modal = document.getElementById('spuPassModal');
+      const openBtn = document.getElementById('spuPassBtn');
+      const closeBtn = document.getElementById('closePassBtn');
+
+      if (openBtn && modal && closeBtn) {
+        openBtn.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
+</div>
+<div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-space-md" id="swapProposalModal">
+<div class="w-full max-w-[620px] bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden flex flex-col animate-scaleUp">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">swap_horiz</span>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Propose Direct Swap</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Offering an item to Kabelo M. (ID: 20210842)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" onclick="closeProposalModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md max-h-[70vh] overflow-y-auto">
+<div class="p-space-sm rounded-lg bg-secondary-container/30 flex items-center gap-space-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px] shrink-0 text-secondary">info</span>
+<span class="font-body-sm text-body-sm">Kabelo indicated preference for: <strong>Knitted sweaters (M), Corduroy jackets, or Biology lab coats</strong>.</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Select 1 item from your registered SPU Wardrobe:</span>
+<!-- Wardrobe Item Selector Options -->
+<div class="flex flex-col gap-space-xs">
+<!-- Option 1 -->
+<label class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors group">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" name="swapSelection" type="radio" value="knit"/>
+<img class="w-12 h-12 rounded object-cover" data-alt="Close up image of thrifted vintage chunky sage green cable-knit wool sweater, size Medium, folded cleanly on rustic desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmeSl8Z6Do2wrbBuJfTO9ez_fStumEFAK5i0szcObo2FXyYJacFRfM8zQgyl-hSvxDtNAthi8ajOV92fbVj5petCcFQsdKNxzibVgJg4vN6FSd2HaTSH_CRTzFzhSuu7COaouCwe6tpSMDt8UUVrsV2o_4OtCMxeuprkTEUx2c3acrkQNa_MjioG3DDPBil9A9FqY_gTpvbPNhBD36GtBmkair1S-lxM29WEOUYnMCtIbSGT9SxZAZmw"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sage Green Chunky Cable Sweater</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Size M • 100% Wool • Like New</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">Matches Wishlist!</span>
+</label>
+<!-- Option 2 -->
+<label class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-between cursor-pointer transition-colors group">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 accent-primary cursor-pointer" name="swapSelection" type="radio" value="denim"/>
+<img class="w-12 h-12 rounded object-cover" data-alt="Classic indigo denim jacket with sherpa fleece lining, size Large, clean collegiate streetwear styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1zxYhkVl5ocTltBpkyMQxQe1zjHerXkCRYTQvaCmrTWOjfSZjd4IKNRzJqg4Q0ZdX1HKvMmHFTdOxftJawGgFsKq7f19KnW4AdBnHZTF7Q9GXZEp0T5LqTP7qEw47BBd5-GGYZIc4zfS6kKRUwbUWnN17IDsv_-XlJX2Im1UzZdqeGPv2KFnJm3SKaM8zvayw5-_VyfTau3S_FYWj9f0HbwFpmm6abBMxA-1cvptCnAd25mxcf9fqOA"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Classic Indigo Fleece Denim Jacket</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Size L • Cotton • Good Condition</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Alternative</span>
+</label>
+</div>
+<!-- Optional Cash Balance Top-up -->
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Add Optional Cash Sweetener (if trade value differs):</label>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">R</span>
+<input class="w-28 px-3 py-2 rounded bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-high" min="0" placeholder="0.00" step="10" type="number"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optional boost to increase offer acceptance</span>
+</div>
+</div>
+<!-- Message Note to Seller -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Proposal Note for Kabelo:</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-high" placeholder="E.g. Hi Kabelo, my sweater matches your exact request! Free to meet outside Central Library after 14:00." rows="3"></textarea>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="closeProposalModal()">
+          Cancel
+        </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center gap-1.5 shadow-sm" onclick="submitProposal()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Submit Swap Proposal</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic Scripts -->
+<script>
+    function changeThumbnail(index, element) {
+      document.querySelectorAll('.thumbnail-btn').forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-primary');
+      });
+      element.classList.add('ring-2', 'ring-primary');
+    }
+
+    function toggleSave(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.classList.contains('text-primary')) {
+        icon.classList.remove('text-primary');
+        icon.classList.add('text-on-surface-variant');
+        icon.innerText = 'bookmark';
+        alert('Removed from your saved campus items.');
+      } else {
+        icon.classList.add('text-primary');
+        icon.classList.remove('text-on-surface-variant');
+        icon.innerText = 'bookmark_added';
+        alert('Saved to your SPU Wishlist! You will receive price drops and swap updates.');
+      }
+    }
+
+    function openProposalModal() {
+      document.getElementById('swapProposalModal').classList.remove('hidden');
+    }
+
+    function closeProposalModal() {
+      document.getElementById('swapProposalModal').classList.add('hidden');
+    }
+
+    function submitProposal() {
+      closeProposalModal();
+      alert('Swap proposal successfully delivered to Kabelo M.! You can track response status in your "Swaps & Messages" tab.');
+    }
+
+    function postCampusComment() {
+      const input = document.getElementById('publicInquiryInput');
+      if (input.value.trim() === '') {
+        alert('Please write an inquiry before posting.');
+        return;
+      }
+      alert('Your inquiry was posted to this item discussion board under your verified SPU profile.');
+      input.value = '';
+    }
+  </script>
+</div>
+
+<div id="authModal" class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-8 shadow-2xl flex flex-col gap-6 relative border border-outline-variant/30 animate-in fade-in duration-200">
+    <button onclick="closeAuthModal()" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full cursor-pointer">
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <div class="flex flex-col items-center text-center gap-2">
+      <div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary">
+        <span class="material-symbols-outlined text-[24px]">verified</span>
+      </div>
+      <h3 id="authModalTitle" class="font-headline-md text-headline-md text-primary font-bold">Student Authentication</h3>
+      <p id="authModalSubtitle" class="font-body-sm text-body-sm text-on-surface-variant">Access the verified Sol Plaatje University circular marketplace</p>
+    </div>
+
+    <!-- Tabs: Sign In / Register -->
+    <div class="flex rounded-lg bg-surface-container-low p-1">
+      <button id="authTabSignIn" onclick="switchAuthModalTab('signin')" class="flex-1 py-2 rounded-md font-label-md text-label-md font-bold bg-primary-container text-on-primary transition cursor-pointer">
+        Sign In
+      </button>
+      <button id="authTabRegister" onclick="switchAuthModalTab('register')" class="flex-1 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition cursor-pointer">
+        New Account
+      </button>
+    </div>
+
+    <!-- Sign In Form -->
+    <form id="modalLoginForm" onsubmit="handleModalLoginSubmit(event)" class="flex flex-col gap-4">
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Student Email</label>
+        <input type="email" id="modalLoginEmail" required placeholder="student@spu.ac.za" class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container border border-outline-variant/30"/>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Password</label>
+        <div class="relative">
+          <input type="password" id="modalLoginPassword" required placeholder="Enter your password" class="w-full px-3.5 py-2.5 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container border border-outline-variant/30"/>
+          <button type="button" onclick="togglePasswordVisibility('modalLoginPassword', 'modalLoginPasswordIcon')" class="absolute right-3 top-2.5 text-on-surface-variant hover:text-on-surface focus:outline-none cursor-pointer">
+            <span id="modalLoginPasswordIcon" class="material-symbols-outlined text-[20px]">visibility</span>
+          </button>
+        </div>
+      </div>
+      <button type="submit" class="w-full py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-bold transition shadow-sm cursor-pointer">
+        Sign In to UniSwap
+      </button>
+    </form>
+
+    <!-- Register Form -->
+    <form id="modalRegisterForm" onsubmit="handleModalRegisterSubmit(event)" class="hidden flex flex-col gap-3.5">
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Full Name</label>
+        <input type="text" id="modalRegName" required placeholder="e.g. Thabiso Motsepe" class="w-full px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container border border-outline-variant/30"/>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Student Email (@spu.ac.za)</label>
+        <input type="email" id="modalRegEmail" required placeholder="student@spu.ac.za" class="w-full px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container border border-outline-variant/30"/>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Student ID Number</label>
+        <input type="text" id="modalRegStudentId" required placeholder="e.g. 202308942" class="w-full px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container border border-outline-variant/30"/>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Faculty</label>
+        <select id="modalRegFaculty" class="w-full px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none border border-outline-variant/30">
+          <option value="Humanities">Faculty of Humanities</option>
+          <option value="Natural & Applied Sciences">Faculty of Natural & Applied Sciences</option>
+          <option value="Economic & Management Sciences">Faculty of Economic & Management Sciences</option>
+          <option value="Education">Faculty of Education</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Password</label>
+        <div class="relative">
+          <input type="password" id="modalRegPassword" required placeholder="Create secure password" class="w-full px-3.5 py-2 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container border border-outline-variant/30"/>
+          <button type="button" onclick="togglePasswordVisibility('modalRegPassword', 'modalRegPasswordIcon')" class="absolute right-3 top-2 text-on-surface-variant hover:text-on-surface focus:outline-none cursor-pointer">
+            <span id="modalRegPasswordIcon" class="material-symbols-outlined text-[20px]">visibility</span>
+          </button>
+        </div>
+      </div>
+      <button type="submit" class="w-full py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-bold transition shadow-sm mt-1 cursor-pointer">
+        Create SPU Account
+      </button>
+    </form>
+  </div>
+</div>
+
+
+<div id="editProfileModal" class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-8 shadow-2xl flex flex-col gap-6 relative border border-outline-variant/30 animate-in fade-in duration-200">
+    <button onclick="closeEditProfileModal()" class="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full cursor-pointer">
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+        <span class="material-symbols-outlined text-[22px] text-secondary">manage_accounts</span>
+      </div>
+      <div>
+        <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Edit Student Profile</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Update your public campus curator details</p>
+      </div>
+    </div>
+    <form id="editProfileForm" onsubmit="handleSaveProfile(event)" class="flex flex-col gap-4">
+      <div class="flex items-center gap-4 p-3 bg-surface-container-low rounded-xl">
+        <img id="editProfileAvatarPreview" class="w-14 h-14 rounded-full object-cover border-2 border-secondary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhP8fGjjqa_GoT6lMe1BvxVgGRgyU2XVH_g2I1vIPUHsyAfnFZIVNRF7FjH9Bdo6UBbMQobOBekQzup2pC6snWuMZbiIa03wRVB07oqQCHxzefF0LmyQ6N5xiKL1pve1qjeYX9FbXQpwnnHmwXJ9vtCI1-bx3qe3oI8kF9UNMoYJrbKmORh9NorRQUJKO46xxNS4DtoGjne6gXjy_oH2fppf86v0kAru0O7aTtIr1lP8w09QO5No-KA" alt="Preview"/>
+        <div class="flex flex-col gap-1">
+          <label class="font-label-sm text-label-sm text-on-surface font-semibold">Profile Photo</label>
+          <input type="file" id="editProfileFileInput" accept="image/*" class="text-xs text-on-surface-variant file:mr-2 file:py-1 file:px-2.5 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-primary-container file:text-on-primary hover:file:bg-primary cursor-pointer"/>
+        </div>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Full Name</label>
+        <input type="text" id="editProfileFullName" required class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none border border-outline-variant/30"/>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Faculty / Department</label>
+        <select id="editProfileFaculty" class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none border border-outline-variant/30">
+          <option value="Faculty of Humanities">Faculty of Humanities</option>
+          <option value="Faculty of Natural & Applied Sciences">Faculty of Natural & Applied Sciences</option>
+          <option value="Faculty of Economic & Management Sciences">Faculty of Economic & Management Sciences</option>
+          <option value="Faculty of Education">Faculty of Education</option>
+        </select>
+      </div>
+      <div>
+        <label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Curator Bio</label>
+        <textarea id="editProfileBio" rows="3" class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none border border-outline-variant/30 resize-none" placeholder="Share your circular fashion interests..."></textarea>
+      </div>
+      <div class="flex items-center justify-end gap-3 pt-2">
+        <button type="button" onclick="closeEditProfileModal()" class="px-4 py-2.5 rounded-lg border border-outline-variant/40 text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition cursor-pointer">
+          Cancel
+        </button>
+        <button type="submit" class="px-5 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-bold transition cursor-pointer">
+          Save Changes
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="notificationsModal" class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-6 shadow-2xl flex flex-col gap-4 relative border border-outline-variant/30 animate-in fade-in duration-200">
+    <div class="flex items-center justify-between border-b border-outline-variant/20 pb-3">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[22px]">favorite</span>
+        <h3 class="font-headline-sm text-headline-sm text-primary font-bold">Campus Activity</h3>
+      </div>
+      <button onclick="closeNotificationsModal()" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full cursor-pointer">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="flex flex-col gap-3 max-h-[60vh] overflow-y-auto">
+      <div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3">
+        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">verified</span>
+        <div>
+          <p class="font-label-md text-label-md text-on-surface font-semibold">SPU Pass Verified</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Your student ID is recognized for live guarded exchange zones.</p>
+          <span class="font-label-sm text-label-sm text-secondary font-bold">Just now</span>
+        </div>
+      </div>
+      <div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">swap_calls</span>
+        <div>
+          <p class="font-label-md text-label-md text-on-surface font-semibold">New Swap Inquiry</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Kabelo M. replied to your trade offer on the Vintage Windbreaker.</p>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">10m ago</span>
+        </div>
+      </div>
+      <div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-3">
+        <span class="material-symbols-outlined text-tertiary text-[20px] mt-0.5">eco</span>
+        <div>
+          <p class="font-label-md text-label-md text-on-surface font-semibold">+25 Eco Impact Points</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">You diverted 1.2 kg of textile waste on Sol Plaatje campus.</p>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">2h ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Application Controller Script -->
+<script src="/static/app.js?v=editorial_v2"></script>
+</body>
+</html>
